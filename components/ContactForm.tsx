@@ -65,7 +65,7 @@ export default function ContactForm() {
 
       setSubmitSuccess(true);
       reset();
-    } catch (_) { // Using underscore to explicitly ignore the error parameter
+    } catch {
       setSubmitError('There was an error submitting your request. Please try again.');
     } finally {
       setIsSubmitting(false);
