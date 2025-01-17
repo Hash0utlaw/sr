@@ -16,7 +16,7 @@ export default function ModifiedBitumenPage() {
         <div className="space-y-6 animate-fade-in-up">
           <h2 className="text-3xl font-bold">What is Modified Bitumen Roofing?</h2>
           <p>
-            Modified Bitumen roofing is an asphalt-based, close cousin to the Built-Up Roof (BUR) that offers added tensile strength and elasticity. It's designed for buildings with low-slope or flat roof structures.
+            Modified Bitumen roofing is an asphalt-based, close cousin to the Built-Up Roof (BUR) that offers added tensile strength and elasticity. It&apos;s designed for buildings with low-slope or flat roof structures.
           </p>
           <h3 className="text-2xl font-semibold">Key Benefits:</h3>
           <ul className="list-disc list-inside space-y-2">
@@ -38,4 +38,3 @@ export default function ModifiedBitumenPage() {
     </div>
   )
 }
-

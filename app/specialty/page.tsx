@@ -3,6 +3,7 @@ import { ServiceHeader } from '@/components/service-header'
 import { Section } from '@/components/section'
 import { Footer } from '@/components/footer'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const specialtyTypes = [
   {
@@ -49,11 +50,16 @@ export default function SpecialtyRoofing() {
               <li>Expert installation by certified craftsmen</li>
               <li>Premium materials for lasting beauty and protection</li>
               <li>Customized solutions for your specific needs</li>
-              <li>Enhance your property's value and curb appeal</li>
+              <li>Enhance your property&apos;s value and curb appeal</li>
             </ul>
           </div>
-          <div className="animate-fade-in-right">
-            <img src="/specialty-roofing.jpg" alt="Specialty Roofing" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-[400px]">
+            <Image 
+              src="/specialty-roofing.jpg" 
+              alt="Specialty Roofing" 
+              fill
+              className="rounded-lg shadow-lg object-cover"
+            />
           </div>
         </div>
       </Section>
@@ -66,7 +72,14 @@ export default function SpecialtyRoofing() {
           {specialtyTypes.map((type, index) => (
             <Link href={type.href} key={index} className="block">
               <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
-                <img src={type.imageUrl || "/placeholder.svg"} alt={type.title} className="w-full h-48 object-cover" />
+                <div className="relative h-48">
+                  <Image 
+                    src={type.imageUrl || "/placeholder.svg"} 
+                    alt={type.title} 
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-gray-800">{type.title}</h3>
                   <p className="text-gray-600">{type.description}</p>
@@ -80,4 +93,3 @@ export default function SpecialtyRoofing() {
     </main>
   )
 }
-

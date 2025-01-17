@@ -16,7 +16,7 @@ export default function RoofCoatingsPage() {
         <div className="space-y-6 animate-fade-in-up">
           <h2 className="text-3xl font-bold">What are Roof Coatings and Restoration?</h2>
           <p>
-            Roof coatings are fluid-applied roofing systems that can restore and extend the life of various types of existing roof systems. They provide a new, waterproof membrane that can significantly improve a roof's performance and longevity.
+            Roof coatings are fluid-applied roofing systems that can restore and extend the life of various types of existing roof systems. They provide a new, waterproof membrane that can significantly improve a roof&apos;s performance and longevity.
           </p>
           <h3 className="text-2xl font-semibold">Key Benefits:</h3>
           <ul className="list-disc list-inside space-y-2">
@@ -48,4 +48,3 @@ export default function RoofCoatingsPage() {
     </div>
   )
 }
-

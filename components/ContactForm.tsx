@@ -65,7 +65,7 @@ export default function ContactForm() {
 
       setSubmitSuccess(true);
       reset();
-    } catch (err) {
+    } catch (error) {
       setSubmitError('There was an error submitting your request. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -226,7 +226,7 @@ export default function ContactForm() {
               <p className="mt-1 text-sm text-red-600">
                 {errors.preferredContact.message}
               </p>
-            )}
+              )}
           </div>
 
           {/* Message */}
