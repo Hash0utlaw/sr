@@ -64,7 +64,7 @@ export function TestimonialsSection() {
                 ))}
               </div>
               <p className="text-xl mb-6 italic">
-                "{testimonials[currentIndex].text}"
+                &quot;{testimonials[currentIndex].text}&quot;
               </p>
               <div className="font-bold">
                 {testimonials[currentIndex].name}
@@ -84,4 +84,3 @@ export function TestimonialsSection() {
     </section>
   )
 }
-

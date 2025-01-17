@@ -53,7 +53,6 @@ export default function ContactForm() {
     setSubmitError('');
     
     try {
-      // Replace with your actual API endpoint
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -66,7 +65,7 @@ export default function ContactForm() {
 
       setSubmitSuccess(true);
       reset();
-    } catch (error) {
+    } catch (err) {
       setSubmitError('There was an error submitting your request. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -83,7 +82,7 @@ export default function ContactForm() {
 
         {submitSuccess && (
           <div className="mb-6 p-4 bg-green-50 text-green-700 rounded-md">
-            Thank you for contacting us! We'll be in touch shortly.
+            Thank you for contacting us! We&apos;ll be in touch shortly.
           </div>
         )}
 
@@ -282,7 +281,7 @@ export default function ContactForm() {
               <h3 className="font-semibold mb-1">Email</h3>
               <p>info@summitroofing.com</p>
               <p className="text-sm text-gray-300">
-                We'll respond within 24 hours
+                We&apos;ll respond within 24 hours
               </p>
             </div>
           </div>
@@ -313,4 +312,3 @@ export default function ContactForm() {
     </div>
   );
 }
-

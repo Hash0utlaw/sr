@@ -9,14 +9,14 @@ export function HailDamageSection() {
         <div className="space-y-4">
           <h2 className="text-3xl font-bold text-orange-500">Understanding Hail Damage</h2>
           <p className="text-lg text-orange-300">
-            Hail damage isn't always immediately visible, but it can significantly impact your roof's integrity. Our experts know exactly what to look for and how to document it for your insurance claim.
+            Hail damage isn&apos;t always immediately visible, but it can significantly impact your roof&apos;s integrity. Our experts know exactly what to look for and how to document it for your insurance claim.
           </p>
           <div className="bg-black/50 p-6 rounded-lg border border-orange-500">
             <h3 className="text-xl font-semibold text-orange-500 mb-4">Key Facts About Hail Damage:</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <AlertCircle className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
-                <span>Hail damage doesn't always cause immediate leaks</span>
+                <span>Hail damage doesn&apos;t always cause immediate leaks</span>
               </li>
               <li className="flex items-start space-x-2">
                 <CheckCircle2 className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
@@ -24,7 +24,7 @@ export function HailDamageSection() {
               </li>
               <li className="flex items-start space-x-2">
                 <Shield className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
-                <span>Filing a claim is free and won't affect your insurance rates</span>
+                <span>Filing a claim is free and won&apos;t affect your insurance rates</span>
               </li>
             </ul>
           </div>
@@ -88,4 +88,3 @@ export function HailDamageSection() {
     </div>
   )
 }
-

@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils"
-
 interface ServiceHeaderProps {
   title: string
   description: string
@@ -28,4 +26,3 @@ export function ServiceHeader({ title, description, backgroundImage }: ServiceHe
     </div>
   )
 }
-
