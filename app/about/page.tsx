@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div className="space-y-6 animate-fade-in-left">
             <h2 className="text-3xl font-bold">Our Story</h2>
             <p className="text-lg">
-              As a veteran with a lifetime of roofing experience, both in and out of military service, I've built a company rooted in principle, family, and service. Together with my dedicated team, we bring over 500 years of combined experience to every project, ensuring top-tier craftsmanship and unmatched expertise.
+              As a veteran with a lifetime of roofing experience, both in and out of military service, I&apos;ve built a company rooted in principle, family, and service. Together with my dedicated team, we bring over 500 years of combined experience to every project, ensuring top-tier craftsmanship and unmatched expertise.
             </p>
             <p className="text-lg">
               We specialize in all types of roofing systems—residential, commercial, industrial, specialized, and fluid-applied solutions. Our residential services are particularly focused on helping homeowners secure full roof replacements through insurance approvals, saving our clients time, stress, and money.
@@ -53,7 +53,7 @@ export default function AboutPage() {
         <div className="space-y-6 animate-fade-in-up">
           <h2 className="text-3xl font-bold">Our Services</h2>
           <p className="text-lg">
-            Whether it's a small residential repair or a complex industrial project, we approach every job with the same dedication, care, and attention to detail. Our comprehensive services include:
+            Whether it&apos;s a small residential repair or a complex industrial project, we approach every job with the same dedication, care, and attention to detail. Our comprehensive services include:
           </p>
           <ul className="list-disc list-inside space-y-2">
             <li>Residential roofing (including insurance claim assistance)</li>
@@ -107,4 +107,3 @@ export default function AboutPage() {
     </div>
   )
 }
-
