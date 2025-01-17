@@ -3,25 +3,134 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: #ff6b00;  /* Orange */
+  --secondary: #000000; /* Black */
+  --accent: #ffffff; /* White */
+  --background: #000000;
+  --foreground: #ff6b00;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-background text-foreground antialiased;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.container {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.5s ease-out;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.hover-grow {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-orange-500 text-white px-6 py-3 rounded-full font-bold
+    transition-all duration-200 hover:bg-orange-600 hover:shadow-lg
+    transform hover:scale-105;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight;
+}
+
+/* Links */
+a {
+  @apply transition-colors duration-200;
+}
+
+/* Navigation specific */
+.nav-link {
+  @apply text-sm font-medium hover:text-orange-400 transition-colors duration-200;
+}
+
+/* Layout utilities */
+.section-padding {
+  @apply py-12 md:py-24;
+}
+
+.section-margin {
+  @apply my-12 md:my-24;
+}
+
+/* Navigation styles */
+.nav-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between;
+}
+
+.nav-link {
+  @apply text-sm font-medium hover:text-orange-400 transition-colors duration-200;
+}
+
+.nav-button {
+  @apply bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-bold;
+}
+
