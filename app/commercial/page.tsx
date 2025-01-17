@@ -3,6 +3,7 @@ import { ServiceHeader } from '@/components/service-header'
 import { Section } from '@/components/section'
 import { Footer } from '@/components/footer'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Building2, Shield, PenToolIcon as Tool, Droplets, Sun, Ruler, HardHat, CloudLightning } from 'lucide-react'
 
 const commercialServices = [
@@ -80,8 +81,13 @@ export default function CommercialRoofing() {
               <li>24/7 emergency services</li>
             </ul>
           </div>
-          <div className="animate-fade-in-right">
-            <img src="/commercial-roofing.jpg" alt="Commercial Roofing" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-[400px]">
+            <Image 
+              src="/commercial-roofing.jpg" 
+              alt="Commercial Roofing" 
+              fill
+              className="rounded-lg shadow-lg object-cover" 
+            />
           </div>
         </div>
       </Section>
@@ -124,4 +130,3 @@ export default function CommercialRoofing() {
     </div>
   )
 }
-

@@ -56,7 +56,7 @@ export default function ResidentialRoofing() {
               <li>Expert installation by certified craftsmen</li>
               <li>Premium materials for lasting beauty and protection</li>
               <li>Customized solutions for your specific needs</li>
-              <li>Enhance your property's value and curb appeal</li>
+              <li>Enhance your property&apos;s value and curb appeal</li>
               <li>Comprehensive warranty coverage</li>
             </ul>
           </div>
@@ -79,7 +79,14 @@ export default function ResidentialRoofing() {
           {residentialRoofingTypes.map((type, index) => (
             <Link href={type.href} key={index} className="block">
               <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
-                <img src={type.imageUrl || "/placeholder.svg"} alt={type.title} className="w-full h-48 object-cover" />
+                <div className="relative h-48">
+                  <Image 
+                    src={type.imageUrl || "/placeholder.svg"} 
+                    alt={type.title} 
+                    fill
+                    className="object-cover" 
+                  />
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-orange-500">{type.title}</h3>
                   <p className="text-orange-300">{type.description}</p>
@@ -93,4 +100,3 @@ export default function ResidentialRoofing() {
     </main>
   )
 }
-

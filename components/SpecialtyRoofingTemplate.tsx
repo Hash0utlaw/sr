@@ -2,6 +2,7 @@ import { NavBar } from '@/components/nav-bar'
 import { ServiceHeader } from '@/components/service-header'
 import { Section } from '@/components/section'
 import { Footer } from '@/components/footer'
+import Image from 'next/image'
 
 interface MaterialSpec {
   label: string;
@@ -51,8 +52,13 @@ export default function SpecialtyRoofingTemplate({
             <h2 className="text-3xl font-bold">{title}</h2>
             <p className="text-lg">{description}</p>
           </div>
-          <div className="animate-fade-in-right">
-            <img src={imageUrl} alt={title} className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-[400px]">
+            <Image 
+              src={imageUrl} 
+              alt={title} 
+              fill
+              className="rounded-lg shadow-lg object-cover" 
+            />
           </div>
         </div>
       </Section>
@@ -124,7 +130,14 @@ export default function SpecialtyRoofingTemplate({
         <h3 className="text-2xl font-bold mb-8 text-center text-white">Gallery</h3>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
-            <img key={index} src={image} alt={`${title} example ${index + 1}`} className="w-full h-64 object-cover rounded-lg shadow-lg" />
+            <div key={index} className="relative h-64">
+              <Image 
+                src={image} 
+                alt={`${title} example ${index + 1}`} 
+                fill
+                className="object-cover rounded-lg shadow-lg"
+              />
+            </div>
           ))}
         </div>
       </Section>

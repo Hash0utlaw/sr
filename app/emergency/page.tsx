@@ -2,6 +2,7 @@ import { NavBar } from '@/components/nav-bar'
 import { ServiceHeader } from '@/components/service-header'
 import { Section } from '@/components/section'
 import { Footer } from '@/components/footer'
+import Image from 'next/image'
 
 export default function EmergencyServices() {
   return (
@@ -14,8 +15,13 @@ export default function EmergencyServices() {
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="animate-fade-in-left">
-            <img src="/emergency-roofing.jpg" alt="Emergency Roofing Services" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-left relative h-[400px]">
+            <Image 
+              src="/emergency-roofing.jpg" 
+              alt="Emergency Roofing Services" 
+              fill
+              className="rounded-lg shadow-lg object-cover" 
+            />
           </div>
           <div className="space-y-4 animate-fade-in-right">
             <h2 className="text-3xl font-bold">Fast, Reliable Emergency Roofing Solutions</h2>
@@ -34,7 +40,7 @@ export default function EmergencyServices() {
       <Section dark>
         <div className="text-center max-w-3xl mx-auto space-y-4 animate-fade-in">
           <h2 className="text-3xl font-bold">Why Choose Our Emergency Roofing Services?</h2>
-          <p>When you're facing a roofing emergency, you need a team you can trust. Here's why Summit Roofing should be your first call:</p>
+          <p>When you&apos;re facing a roofing emergency, you need a team you can trust. Here&apos;s why Summit Roofing should be your first call:</p>
           <ul className="grid md:grid-cols-2 gap-4 text-left">
             <li className="flex items-start space-x-2">
               <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>

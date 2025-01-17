@@ -43,19 +43,19 @@ export default function RoofRepairsPage() {
           <h2 className="text-3xl font-bold">Our Roof Maintenance Process</h2>
           <ol className="list-decimal list-inside space-y-4">
             <li>
-              <span className="font-semibold">Thorough Inspection:</span> We conduct a comprehensive assessment of your roof's condition.
+              <span className="font-semibold">Thorough Inspection:</span> We conduct a comprehensive assessment of your roof&apos;s condition.
             </li>
             <li>
               <span className="font-semibold">Detailed Report:</span> We provide a clear report of our findings and recommendations.
             </li>
             <li>
-              <span className="font-semibold">Customized Maintenance Plan:</span> We develop a tailored plan to address your roof's specific needs.
+              <span className="font-semibold">Customized Maintenance Plan:</span> We develop a tailored plan to address your roof&apos;s specific needs.
             </li>
             <li>
               <span className="font-semibold">Professional Repairs:</span> Our expert team performs necessary repairs using top-quality materials.
             </li>
             <li>
-              <span className="font-semibold">Preventive Measures:</span> We implement strategies to prevent future issues and extend your roof's lifespan.
+              <span className="font-semibold">Preventive Measures:</span> We implement strategies to prevent future issues and extend your roof&apos;s lifespan.
             </li>
           </ol>
         </div>
@@ -64,4 +64,3 @@ export default function RoofRepairsPage() {
     </div>
   )
 }
-

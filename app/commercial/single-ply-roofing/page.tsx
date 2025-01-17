@@ -3,6 +3,7 @@ import { ServiceHeader } from '@/components/service-header'
 import { Section } from '@/components/section'
 import { Footer } from '@/components/footer'
 import { CheckCircle } from 'lucide-react'
+import Image from 'next/image'
 
 export default function SinglePlyRoofingPage() {
   return (
@@ -39,8 +40,13 @@ export default function SinglePlyRoofingPage() {
               </li>
             </ul>
           </div>
-          <div className="animate-fade-in-right">
-            <img src="/single-ply-roofing.jpg" alt="Single-Ply Roofing" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-[400px]">
+            <Image 
+              src="/single-ply-roofing.jpg" 
+              alt="Single-Ply Roofing" 
+              fill
+              className="rounded-lg shadow-lg object-cover" 
+            />
           </div>
         </div>
       </Section>
@@ -97,4 +103,3 @@ export default function SinglePlyRoofingPage() {
     </div>
   )
 }
-

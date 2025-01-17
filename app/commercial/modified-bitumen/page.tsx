@@ -3,6 +3,7 @@ import { ServiceHeader } from '@/components/service-header'
 import { Section } from '@/components/section'
 import { Footer } from '@/components/footer'
 import { CheckCircle, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 export default function ModifiedBitumenPage() {
   return (
@@ -39,8 +40,13 @@ export default function ModifiedBitumenPage() {
               </li>
             </ul>
           </div>
-          <div className="animate-fade-in-right">
-            <img src="/modified-bitumen-roofing.jpg" alt="Modified Bitumen Roofing" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-[400px]">
+            <Image 
+              src="/modified-bitumen-roofing.jpg" 
+              alt="Modified Bitumen Roofing" 
+              fill
+              className="rounded-lg shadow-lg object-cover" 
+            />
           </div>
         </div>
       </Section>
@@ -81,4 +87,3 @@ export default function ModifiedBitumenPage() {
     </div>
   )
 }
-

@@ -42,7 +42,7 @@ export default function FlatRoofingPage() {
           <h2 className="text-3xl font-bold">Our Flat Roofing Process</h2>
           <ol className="list-decimal list-inside space-y-4">
             <li>
-              <span className="font-semibold">Site Evaluation:</span> We assess your home's structure and your specific needs.
+              <span className="font-semibold">Site Evaluation:</span> We assess your home&apos;s structure and your specific needs.
             </li>
             <li>
               <span className="font-semibold">Material Selection:</span> We help you choose the best flat roofing material for your project.
@@ -63,4 +63,3 @@ export default function FlatRoofingPage() {
     </div>
   )
 }
-

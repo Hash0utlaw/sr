@@ -81,7 +81,7 @@ export default function InsuranceReplacementPage() {
         <div className="text-center space-y-6">
           <h2 className="text-3xl font-bold">Ready to Get Started?</h2>
           <p className="text-lg max-w-2xl mx-auto">
-            Don't wait for leaks to appear. Contact us today for a free inspection and let us help you navigate the insurance claim process.
+            Don&apos;t wait for leaks to appear. Contact us today for a free inspection and let us help you navigate the insurance claim process.
           </p>
           <Link 
             href="/contact"

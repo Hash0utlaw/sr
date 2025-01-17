@@ -17,7 +17,7 @@ export default function FinancingPage() {
         <div className="space-y-6 animate-fade-in-up">
           <h2 className="text-3xl font-bold">Affordable Roofing Solutions</h2>
           <p className="text-lg">
-            At Summit Roofing, we understand that a new roof is a significant investment. That's why we offer flexible financing options to help make your roofing project more affordable. Contact us to learn more about our financing solutions.
+            At Summit Roofing, we understand that a new roof is a significant investment. That&apos;s why we offer flexible financing options to help make your roofing project more affordable. Contact us to learn more about our financing solutions.
           </p>
         </div>
       </Section>
@@ -29,4 +29,3 @@ export default function FinancingPage() {
     </div>
   )
 }
-
