@@ -10,25 +10,25 @@ const specialtyTypes = [
     title: "Slate Roofing",
     description: "Elegant and long-lasting natural stone roofing",
     href: "/specialty/slate",
-    imageUrl: "/images/specialty/slate-roofing.jpg"
+    imageUrl: "/specialty/slatemain.png"
   },
   {
     title: "Cedar Shake Roofing",
     description: "Beautiful, natural wood roofing with excellent insulation",
     href: "/specialty/cedar-shake",
-    imageUrl: "/images/specialty/cedar-shake-roofing.jpg"
+    imageUrl: "/specialty/cedar-specail.png"
   },
   {
     title: "Tile Roofing",
     description: "Durable and aesthetically pleasing clay or concrete tiles",
     href: "/specialty/tile",
-    imageUrl: "/images/specialty/tile-roofing.jpg"
+    imageUrl: "/specialty/tile-specail.png"
   },
   {
     title: "Metal Shingles",
     description: "Modern, lightweight, and long-lasting roofing option",
     href: "/specialty/metal-shingles",
-    imageUrl: "/images/specialty/metal-shingles-roofing.jpg"
+    imageUrl: "/specialty/metal-specail.png"
   }
 ];
 
@@ -39,7 +39,7 @@ export default function SpecialtyRoofing() {
       <ServiceHeader 
         title="Specialty Roofing"
         description="Unique roofing solutions for distinctive properties"
-        backgroundImage="/specialty-roofing-bg.jpg"
+        backgroundImage="/specialty/Main_Specialty_Roofing.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">

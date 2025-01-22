@@ -10,7 +10,7 @@ export default function RoofRepairsPage() {
       <ServiceHeader 
         title="Roof Repairs and Maintenance"
         description="Expert care to extend the life of your residential roof"
-        backgroundImage="/images/residential/roof-repairs.jpg"
+        backgroundImage="/public/residential/roof-repairs.png"
       />
       <Section>
         <div className="space-y-6 animate-fade-in-up">

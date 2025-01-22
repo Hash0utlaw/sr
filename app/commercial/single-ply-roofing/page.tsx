@@ -12,7 +12,7 @@ export default function SinglePlyRoofingPage() {
       <ServiceHeader 
         title="Single-Ply Roofing"
         description="TPO, EPDM, and PVC solutions for energy-efficient commercial roofing"
-        backgroundImage="/single-ply-roofing-bg.jpg"
+        backgroundImage="SummitR/sr/public/Commercial /singleply.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">

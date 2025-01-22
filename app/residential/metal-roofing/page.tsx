@@ -10,7 +10,7 @@ export default function MetalRoofingPage() {
       <ServiceHeader 
         title="Metal Roofing"
         description="Durable, energy-efficient, and stylish roofing solution for modern homes"
-        backgroundImage="/images/residential/metal-roofing.jpg"
+        backgroundImage="/residential/metal-roofing.png"
       />
       <Section>
         <div className="space-y-6 animate-fade-in-up">

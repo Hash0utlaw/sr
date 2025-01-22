@@ -16,13 +16,13 @@ const residentialRoofingTypes = [
     title: "Metal Roofing",
     description: "Durable, energy-efficient, and stylish roofing solution for modern homes",
     href: "/residential/metal-roofing",
-    imageUrl: "/images/residential/metal-roofing.jpg"
+    imageUrl: "/residential/metal-roofing.png"
   },
   {
     title: "Tile Roofing",
     description: "Elegant and long-lasting roofing solution for distinctive homes",
     href: "/residential/tile-roofing",
-    imageUrl: "/images/residential/tile-roofing.jpg"
+    imageUrl: "/residential/tile-hero.png"
   },
   {
     title: "Flat Roofing",
@@ -34,7 +34,7 @@ const residentialRoofingTypes = [
     title: "Roof Repairs and Maintenance",
     description: "Expert care to extend the life of your residential roof",
     href: "/residential/roof-repairs",
-    imageUrl: "/images/residential/roof-repairs.jpg"
+    imageUrl: "/residential/roofrepairs.png"
   }
 ];
 

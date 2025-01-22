@@ -12,7 +12,7 @@ export default function ModifiedBitumenPage() {
       <ServiceHeader 
         title="Modified Bitumen Roofing"
         description="Durable and flexible roofing solution for commercial buildings"
-        backgroundImage="/modified-bitumen-bg.jpg"
+        backgroundImage="/Users/hashoutlaw/Desktop/davis/SummitR/sr/public/Commercial /ModifiedBitumen.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">

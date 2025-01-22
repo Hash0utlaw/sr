@@ -30,7 +30,7 @@ export default function SlateRoofing() {
         "Custom color blending available",
         "Expert installation by certified craftsmen"
       ]}
-      imageUrl="/images/specialty/slate-hero.jpg"
+      imageUrl="/SummitR/sr/public/specialty/slatemain.png"
       durabilityRating={10}
       lifespanYears={100}
       maintenanceLevel="Low"
