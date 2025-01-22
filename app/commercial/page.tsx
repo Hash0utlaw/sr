@@ -64,7 +64,7 @@ export default function CommercialRoofing() {
       <ServiceHeader 
         title="Commercial Roofing"
         description="Durable and efficient roofing solutions for your business"
-        backgroundImage="/commercial /singleply.png"
+        backgroundImage="/commercial /tpo-coating3.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">

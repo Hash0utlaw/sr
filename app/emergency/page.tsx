@@ -17,7 +17,7 @@ export default function EmergencyServices() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="animate-fade-in-left relative h-[400px]">
             <Image 
-              src="/emergency/emergency.png" 
+              src="/emergency/emergency-2.png" 
               alt="Emergency Roofing Services" 
               fill
               className="rounded-lg shadow-lg object-cover" 

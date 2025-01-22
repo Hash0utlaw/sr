@@ -11,7 +11,7 @@ export default function HailDamagePage() {
       <ServiceHeader 
         title="Hail Damage and Insurance Coverage"
         description="Understanding hail damage and navigating insurance claims"
-        backgroundImage="/images/hail-damage-bg.jpg"
+        backgroundImage="/insurance/hail-hero.png"
       />
       <Section>
         <div className="space-y-6 animate-fade-in-up">

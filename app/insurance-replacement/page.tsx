@@ -13,7 +13,7 @@ export default function InsuranceReplacementPage() {
       <ServiceHeader 
         title="Insurance-Covered Roof Replacement"
         description="Expert assistance with insurance claims for complete roof replacement"
-        backgroundImage="/images/insurance-replacement-bg.jpg"
+        backgroundImage="/insurance/hail-hero.png"
       />
       <Section>
         <div className="space-y-6 animate-fade-in-up">

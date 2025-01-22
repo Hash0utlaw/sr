@@ -62,7 +62,7 @@ export default function ResidentialRoofing() {
           </div>
           <div className="animate-fade-in-right relative h-[400px]">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/main_residential-XGi1bDUqoI2eMEcR4Di7mauFr8ZdCg.png"
+              src="/residential/shingle-gallery-4.png"
               alt="Beautiful residential roofing"
               fill
               className="rounded-lg shadow-lg object-cover"
