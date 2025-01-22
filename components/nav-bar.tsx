@@ -47,10 +47,10 @@ export function NavBar() {
               </Link>
             ))}
             <a 
-              href="tel:(770) 627-7663" 
+              href="tel:(704) 578-4756" 
               className="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-bold"
             >
-              (770) 627-7663
+              Contact Us
             </a>
           </div>
 
@@ -80,10 +80,10 @@ export function NavBar() {
               </Link>
             ))}
             <a 
-              href="tel:(770) 627-7663" 
+              href="tel:(704) 578-4756" 
               className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-colors duration-200 font-bold text-center"
             >
-              (770) 627-7663
+              Contact Us
             </a>
           </div>
         </div>

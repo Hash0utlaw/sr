@@ -43,7 +43,7 @@ export default function MetalShinglesRoofing() {
         "Light-frame structures"
       ]}
       galleryImages={[
-        "/images/specialty/metal-shingles-1.jpg",
+        "/specialty/metal-roofing-1.png",
         "/images/specialty/metal-shingles-2.jpg",
         "/images/specialty/metal-shingles-3.jpg",
         "/images/specialty/metal-shingles-4.jpg",

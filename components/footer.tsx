@@ -90,21 +90,21 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start space-x-2">
                 <Phone className="w-5 h-5 mt-1 text-orange-500 flex-shrink-0" />
-                <a href="tel:(770) 627-7663" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
-                  (770) 627-7663
+                <a href="tel:(704) 578-4756" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
+                (704) 578-4756
                 </a>
               </li>
               <li className="flex items-start space-x-2">
                 <Mail className="w-5 h-5 mt-1 text-orange-500 flex-shrink-0" />
-                <a href="mailto:info@summitroofing.com" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
-                  info@summitroofing.com
+                <a href="mailto:davis@summitroofingprofessionals.com" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
+                davis@summitroofingprofessionals.com
                 </a>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 mt-1 text-orange-500 flex-shrink-0" />
                 <span className="text-orange-300">
-                  123 Summit Drive<br />
-                  Birmingham, AL 35242
+                  3415 Confetti Blush Dr<br />
+                  Columbus, GA 31909
                 </span>
               </li>
             </ul>
