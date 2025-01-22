@@ -26,7 +26,7 @@ export default function AboutPage() {
           </div>
           <div className="relative h-[400px] animate-fade-in-right">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/about_us2-xYSVPHk0RajjssJDkfeZrSi8hpGZqr.png"
+              src="/about-us/about-us-2.png"
               alt="Professional roofing team at work"
               fill
               className="rounded-lg shadow-lg object-cover"
