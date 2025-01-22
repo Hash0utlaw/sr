@@ -11,13 +11,13 @@ export default function EmergencyServices() {
       <ServiceHeader 
         title="Emergency Roofing Services"
         description="24/7 rapid response for urgent roofing needs"
-        backgroundImage="/emergency-roofing-bg.jpg"
+        backgroundImage="/emergency/emergency.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="animate-fade-in-left relative h-[400px]">
             <Image 
-              src="/emergency-roofing.jpg" 
+              src="/emergency/emergency.png" 
               alt="Emergency Roofing Services" 
               fill
               className="rounded-lg shadow-lg object-cover" 

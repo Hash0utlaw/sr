@@ -10,7 +10,7 @@ export default function TileRoofingPage() {
       <ServiceHeader 
         title="Tile Roofing"
         description="Elegant and long-lasting roofing solution for distinctive homes"
-        backgroundImage="/public/residential/tile-hero.png"
+        backgroundImage="/residential/tile-hero.png"
       />
       <Section>
         <div className="space-y-6 animate-fade-in-up">

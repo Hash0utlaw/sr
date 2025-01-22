@@ -11,7 +11,7 @@ export default function ShingleRoofingPage() {
       <ServiceHeader 
         title="Shingle Roofing"
         description="Versatile and cost-effective roofing solution for residential homes"
-        backgroundImage="/public/residential/shingle-hero.png"
+        backgroundImage="/residential/shingle-hero.png"
       />
       <Section>
         <div className="space-y-6 animate-fade-in-up">

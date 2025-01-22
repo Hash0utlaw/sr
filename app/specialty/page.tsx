@@ -55,7 +55,7 @@ export default function SpecialtyRoofing() {
           </div>
           <div className="animate-fade-in-right relative h-[400px]">
             <Image 
-              src="/specialty-roofing.jpg" 
+              src="/specialty/specail-roofing.png" 
               alt="Specialty Roofing" 
               fill
               className="rounded-lg shadow-lg object-cover"
