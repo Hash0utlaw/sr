@@ -87,7 +87,7 @@ export default function ContactForm() {
 
         {submitSuccess && (
           <div className="mb-6 p-4 bg-green-900 text-green-100 rounded-md border border-green-500">
-            Thank you for contacting us! We'll be in touch shortly.
+            Thank you for contacting us! We&apos;ll be in touch shortly.
           </div>
         )}
 
@@ -231,7 +231,7 @@ export default function ContactForm() {
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Email</h3>
               <p className="text-white">info@summitroofing.com</p>
-              <p className="text-sm text-gray-300">We'll respond within 24 hours</p>
+              <p className="text-sm text-gray-300">We&apos;ll respond within 24 hours</p>
             </div>
           </div>
 
@@ -259,4 +259,3 @@ export default function ContactForm() {
     </div>
   )
 }
-
