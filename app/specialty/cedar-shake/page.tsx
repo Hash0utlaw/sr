@@ -30,7 +30,7 @@ export default function CedarShakeRoofing() {
         "Treatment options for fire resistance",
         "Custom patterns and layouts available"
       ]}
-      imageUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cedar_shake-aRGRj5elEMQiLSJzVVRI5DGZ7QEzQh.png"
+      imageUrl="/specialty/cedar-gallery-1.png"
       durabilityRating={8}
       lifespanYears={30}
       maintenanceLevel="Medium"
@@ -43,12 +43,12 @@ export default function CedarShakeRoofing() {
         "High-end residential developments"
       ]}
       galleryImages={[
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cedar_shake-aRGRj5elEMQiLSJzVVRI5DGZ7QEzQh.png",
-        "/images/specialty/cedar-2.jpg",
-        "/images/specialty/cedar-3.jpg",
-        "/images/specialty/cedar-4.jpg",
-        "/images/specialty/cedar-5.jpg",
-        "/images/specialty/cedar-6.jpg"
+        "/specialty/cedar-gallery-1.png",
+        "/specialty/cedar-gallery-2.png",
+        "/specialty/cedar-gallery-3.png",
+        "/specialty/cedar-gallery-4.png",
+        "/specialty/cedar-gallery-5.png",
+        "/specialty/cedar-gallery-6.png"
       ]}
     />
   );

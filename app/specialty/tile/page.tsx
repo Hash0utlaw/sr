@@ -30,7 +30,7 @@ export default function TileRoofing() {
         "Proper flashing and drainage design",
         "Expert installation by certified teams"
       ]}
-      imageUrl="/images/specialty/tile-hero.jpg"
+      imageUrl="/specialty/tile-hero.png"
       durabilityRating={9}
       lifespanYears={50}
       maintenanceLevel="Low"
@@ -43,12 +43,12 @@ export default function TileRoofing() {
         "Commercial buildings"
       ]}
       galleryImages={[
-        "/images/specialty/tile-1.jpg",
-        "/images/specialty/tile-2.jpg",
-        "/images/specialty/tile-3.jpg",
-        "/images/specialty/tile-4.jpg",
-        "/images/specialty/tile-5.jpg",
-        "/images/specialty/tile-6.jpg"
+        "/specialty/tile-gallery-1.png",
+        "/specialty/tile-gallery-2.png",
+        "/specialty/tile-gallery-3.png",
+        "/specialty/tile-gallery-4.png",
+        "/specialty/tile-gallery-5.png",
+        "/specialty/tile-gallery-6.png"
       ]}
     />
   );

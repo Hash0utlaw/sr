@@ -30,7 +30,7 @@ export default function SlateRoofing() {
         "Custom color blending available",
         "Expert installation by certified craftsmen"
       ]}
-      imageUrl="/SummitR/sr/public/specialty/slatemain.png"
+      imageUrl="/specialty/slate-hero.png"
       durabilityRating={10}
       lifespanYears={100}
       maintenanceLevel="Low"
@@ -43,12 +43,12 @@ export default function SlateRoofing() {
         "Buildings requiring premium curb appeal"
       ]}
       galleryImages={[
-        "/images/specialty/slate-1.jpg",
-        "/images/specialty/slate-2.jpg",
-        "/images/specialty/slate-3.jpg",
-        "/images/specialty/slate-4.jpg",
-        "/images/specialty/slate-5.jpg",
-        "/images/specialty/slate-6.jpg"
+        "/specialty/slate-gallery-1.png",
+        "/specialty/slate-gallery-2.png",
+        "/specialty/slate-gallery-3.png",
+        "/specialty/slate-gallery-4.png",
+        "/specialty/slate-gallery-5.png",
+        "/specialty/slate-gallery-6.png"
       ]}
     />
   );

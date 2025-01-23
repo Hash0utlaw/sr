@@ -10,7 +10,7 @@ const specialtyTypes = [
     title: "Slate Roofing",
     description: "Elegant and long-lasting natural stone roofing",
     href: "/specialty/slate",
-    imageUrl: "/specialty/slatemain.png"
+    imageUrl: "/specialty/slate-hero.png"
   },
   {
     title: "Cedar Shake Roofing",
