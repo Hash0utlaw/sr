@@ -1,6 +1,6 @@
+import { Button } from "@/components/ui/button"
 import { Shield, Award } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export function HeroSection() {
   return (
@@ -49,3 +49,5 @@ export function HeroSection() {
     </div>
   )
 }
+
+
