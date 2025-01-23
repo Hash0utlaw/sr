@@ -1,19 +1,20 @@
-import { Button } from "@/components/ui/button"
 import { Shield, Award } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
     <div className="relative min-h-screen pt-32">
       {/* Background Image with Overlay */}
-      <div
-        className="absolute inset-0 bg-black/80 z-10"
-        style={{
-          backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero-MkgXeZZJuZP5DV7TEhPmrFLbVICw0s.png')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
+      <div className="absolute inset-0 bg-black/80 z-10">
+        <Image
+          src="/hero.png"
+          alt="Hero Background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
 
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 h-[calc(100vh-128px)] flex flex-col items-center justify-center text-center">
@@ -49,4 +50,3 @@ export function HeroSection() {
     </div>
   )
 }
-
