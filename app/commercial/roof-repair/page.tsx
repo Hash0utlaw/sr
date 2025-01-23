@@ -4,6 +4,7 @@ import { Section } from "@/components/section"
 import { Footer } from "@/components/footer"
 import { Clock, Shield, PenToolIcon as Tool, CheckCircle } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function CommercialRoofRepairPage() {
   return (
@@ -54,8 +55,13 @@ export default function CommercialRoofRepairPage() {
               ))}
             </div>
           </div>
-          <div className="animate-fade-in-right">
-            <img src="/commercial-roof-repair.jpg" alt="Commercial Roof Repair" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-96">
+            <Image 
+              src="/commercial-roof-repair.jpg" 
+              alt="Commercial Roof Repair" 
+              fill
+              className="rounded-lg shadow-lg object-cover"
+            />
           </div>
         </div>
       </Section>
@@ -110,4 +116,3 @@ export default function CommercialRoofRepairPage() {
     </div>
   )
 }
-

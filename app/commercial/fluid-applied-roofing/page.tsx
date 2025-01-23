@@ -4,6 +4,7 @@ import { Section } from "@/components/section"
 import { Footer } from "@/components/footer"
 import { CheckCircle } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function FluidAppliedRoofingPage() {
   return (
@@ -39,8 +40,13 @@ export default function FluidAppliedRoofingPage() {
               ))}
             </ul>
           </div>
-          <div className="animate-fade-in-right">
-            <img src="/fluid-applied-roofing.jpg" alt="Fluid-Applied Roofing" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-96">
+            <Image 
+              src="/fluid-applied-roofing.jpg" 
+              alt="Fluid-Applied Roofing" 
+              fill
+              className="rounded-lg shadow-lg object-cover"
+            />
           </div>
         </div>
       </Section>
@@ -100,4 +106,3 @@ export default function FluidAppliedRoofingPage() {
     </div>
   )
 }
-

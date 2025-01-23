@@ -4,6 +4,7 @@ import { Section } from "@/components/section"
 import { Footer } from "@/components/footer"
 import { CloudLightning, Phone, FileCheck, PenToolIcon as Tool } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function StormDamagePage() {
   return (
@@ -53,8 +54,13 @@ export default function StormDamagePage() {
               ))}
             </div>
           </div>
-          <div className="animate-fade-in-right">
-            <img src="/storm-damage-repair.jpg" alt="Storm Damage Repair" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-96">
+            <Image 
+              src="/storm-damage-repair.jpg" 
+              alt="Storm Damage Repair" 
+              fill
+              className="rounded-lg shadow-lg object-cover"
+            />
           </div>
         </div>
       </Section>
@@ -97,7 +103,7 @@ export default function StormDamagePage() {
         <div className="text-center space-y-6">
           <h2 className="text-3xl font-bold">Emergency Storm Damage?</h2>
           <p className="text-lg text-orange-300 max-w-2xl mx-auto">
-            Don't wait - contact us immediately for emergency storm damage response.
+            Don&apos;t wait - contact us immediately for emergency storm damage response.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

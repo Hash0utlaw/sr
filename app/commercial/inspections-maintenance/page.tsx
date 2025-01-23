@@ -4,6 +4,7 @@ import { Section } from "@/components/section"
 import { Footer } from "@/components/footer"
 import { ClipboardCheck, PenToolIcon as Tool, Calendar, Shield } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function InspectionsMaintenancePage() {
   return (
@@ -54,8 +55,13 @@ export default function InspectionsMaintenancePage() {
               ))}
             </div>
           </div>
-          <div className="animate-fade-in-right">
-            <img src="/roof-inspection.jpg" alt="Roof Inspection" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-96">
+            <Image 
+              src="/roof-inspection.jpg" 
+              alt="Roof Inspection" 
+              fill
+              className="rounded-lg shadow-lg object-cover"
+            />
           </div>
         </div>
       </Section>
@@ -112,4 +118,3 @@ export default function InspectionsMaintenancePage() {
     </div>
   )
 }
-

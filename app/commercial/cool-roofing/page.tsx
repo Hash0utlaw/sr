@@ -4,6 +4,7 @@ import { Section } from "@/components/section"
 import { Footer } from "@/components/footer"
 import { Sun, Droplets, Battery, LineChart } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function CoolRoofingPage() {
   return (
@@ -53,8 +54,13 @@ export default function CoolRoofingPage() {
               ))}
             </div>
           </div>
-          <div className="animate-fade-in-right">
-            <img src="/cool-roofing-system.jpg" alt="Cool Roofing System" className="rounded-lg shadow-lg" />
+          <div className="animate-fade-in-right relative h-96">
+            <Image 
+              src="/cool-roofing-system.jpg" 
+              alt="Cool Roofing System" 
+              fill
+              className="rounded-lg shadow-lg object-cover"
+            />
           </div>
         </div>
       </Section>
@@ -124,4 +130,3 @@ export default function CoolRoofingPage() {
     </div>
   )
 }
-
