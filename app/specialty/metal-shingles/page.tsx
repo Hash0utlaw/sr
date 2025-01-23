@@ -30,7 +30,7 @@ export default function MetalShinglesRoofing() {
         "Premium underlayment system",
         "Complete ventilation integration"
       ]}
-      imageUrl="/images/specialty/metal-shingles-hero.jpg"
+      imageUrl="/specialty/metal-hero.png"
       durabilityRating={9}
       lifespanYears={50}
       maintenanceLevel="Low"
@@ -43,12 +43,12 @@ export default function MetalShinglesRoofing() {
         "Light-frame structures"
       ]}
       galleryImages={[
-        "/specialty/metal-roofing-1.png",
-        "/images/specialty/metal-shingles-2.jpg",
-        "/images/specialty/metal-shingles-3.jpg",
-        "/images/specialty/metal-shingles-4.jpg",
-        "/images/specialty/metal-shingles-5.jpg",
-        "/images/specialty/metal-shingles-6.jpg"
+        "/specialty/metal-shingle-1.png",
+        "/specialty/metal-shingle-2.png",
+        "/specialty/metal-shingle-3.png",
+        "/specialty/metal-shingle-4.png",
+        "/specialty/metal-shingle-5.png",
+        "/specialty/metal-shingle-6.png"
       ]}
     />
   );

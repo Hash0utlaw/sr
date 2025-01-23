@@ -16,7 +16,7 @@ const specialtyTypes = [
     title: "Cedar Shake Roofing",
     description: "Beautiful, natural wood roofing with excellent insulation",
     href: "/specialty/cedar-shake",
-    imageUrl: "/specialty/cedar-specail.png"
+    imageUrl: "/specialty/cedar-gallery-3.png"
   },
   {
     title: "Tile Roofing",
@@ -28,7 +28,7 @@ const specialtyTypes = [
     title: "Metal Shingles",
     description: "Modern, lightweight, and long-lasting roofing option",
     href: "/specialty/metal-shingles",
-    imageUrl: "/specialty/metal-specail.png"
+    imageUrl: "/specialty/metal-hero.png"
   }
 ];
 
