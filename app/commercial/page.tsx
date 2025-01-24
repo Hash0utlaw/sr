@@ -58,7 +58,7 @@ export default function CommercialRoofing() {
       <ServiceHeader 
         title="Commercial Roofing"
         description="Durable and efficient roofing solutions for your business"
-        backgroundImage="/commercial/tpo-hero.png"
+        backgroundImage="/commercial /tpo-hero.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -77,7 +77,7 @@ export default function CommercialRoofing() {
           </div>
           <div className="animate-fade-in-right relative h-[400px]">
             <Image 
-              src="/commercial/tpo-gallery-1.png" 
+              src="/commercial /tpo-gallery-1.png" 
               alt="Commercial Roofing" 
               fill
               className="rounded-lg shadow-lg object-cover" 

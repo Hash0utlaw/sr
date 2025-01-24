@@ -18,12 +18,7 @@ const residentialRoofingTypes = [
     href: "/residential/metal-roofing",
     imageUrl: "/residential/metal-roofing.png"
   },
-  {
-    title: "Tile Roofing",
-    description: "Elegant and long-lasting roofing solution for distinctive homes",
-    href: "/residential/tile-roofing",
-    imageUrl: "/residential/tile-hero.png"
-  },
+
   {
     title: "Roof Repairs and Maintenance",
     description: "Expert care to extend the life of your residential roof",
