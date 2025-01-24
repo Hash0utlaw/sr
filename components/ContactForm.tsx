@@ -251,7 +251,7 @@ export default function ContactForm() {
               <p className="text-white">Monday - Friday: 8:00 AM - 5:00 PM</p>
               <p className="text-white">Saturday: 9:00 AM - 2:00 PM</p>
               <p className="text-white">Sunday: Closed</p>
-              <p className="text-sm text-gray-300 mt-1">24/7 Emergency Service Available</p>
+              <p className="text-sm text-gray-300 mt-1">Rapid Emergency Service Available</p>
             </div>
           </div>
         </div>
