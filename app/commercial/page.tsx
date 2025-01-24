@@ -7,12 +7,7 @@ import Image from 'next/image'
 import { Building2, Shield, PenToolIcon as Tool, Droplets, Sun, Ruler, HardHat, CloudLightning } from 'lucide-react'
 
 const commercialServices = [
-  {
-    icon: Building2,
-    title: "Built-Up Roofing (BUR)",
-    description: "Multi-layer protection for flat or low-slope roofs",
-    href: "/commercial/built-up-roofing"
-  },
+
   {
     icon: Shield,
     title: "Modified Bitumen",

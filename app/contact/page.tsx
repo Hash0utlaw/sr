@@ -1,20 +1,19 @@
-import ContactForm from '@/components/ContactForm';
-import { MapPin, Award, Clock, Phone } from 'lucide-react';
-import { NavBar } from '@/components/nav-bar';
-import { Footer } from '@/components/footer';
+import ContactForm from "@/components/ContactForm"
+import { MapPin, Award, Clock, Phone } from "lucide-react"
+import { NavBar } from "@/components/nav-bar"
+import { Footer } from "@/components/footer"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black text-orange-500">
       <NavBar />
       {/* Hero Section */}
-      <section className="bg-secondary py-16">
+      <section className="bg-gray-900 py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Contact Summit Roofing
-            </h1>
-            <p className="text-xl text-gray-300">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-orange-500">Contact Summit Roofing</h1>
+            <p className="text-xl text-orange-300">
               Get in touch with our roofing experts for a free consultation and estimate.
             </p>
           </div>
@@ -22,57 +21,59 @@ export default function ContactPage() {
       </section>
 
       {/* Quick Contact Cards */}
-      <section className="py-12 bg-white">
+      <section className="py-16 bg-black">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto -mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto -mt-32">
             {/* Emergency Service */}
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <Phone className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-secondary mb-2">
-                Rapid Emergency Response
-              </h3>
-              <p className="text-secondary-600 mb-4">
-                Available around the clock for urgent roofing needs
-              </p>
-              <a
-                href="tel:704-578-4756"
-                className="text-primary font-semibold hover:text-primary-dark"
-              >
-                704-578-4756
-              </a>
-            </div>
+            <Card className="bg-gray-900 border-orange-500">
+              <CardHeader>
+                <Phone className="w-12 h-12 text-orange-500 mx-auto mb-4" />
+                <CardTitle className="text-2xl font-bold text-orange-500 mb-2">Rapid Emergency Response</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-orange-300 mb-4">Available around the clock for urgent roofing needs</p>
+                <a
+                  href="tel:704-578-4756"
+                  className="text-orange-500 font-semibold text-xl hover:text-orange-400 transition-colors"
+                >
+                  704-578-4756
+                </a>
+              </CardContent>
+            </Card>
 
             {/* Service Guarantee */}
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <Award className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-secondary mb-2">
-                Service Guarantee
-              </h3>
-              <p className="text-secondary-600">
-                Expert service backed by our lifetime workmanship warranty
-              </p>
-            </div>
+            <Card className="bg-gray-900 border-orange-500">
+              <CardHeader>
+                <Award className="w-12 h-12 text-orange-500 mx-auto mb-4" />
+                <CardTitle className="text-2xl font-bold text-orange-500 mb-2">Service Guarantee</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-orange-300">Expert service backed by our lifetime workmanship warranty</p>
+              </CardContent>
+            </Card>
 
             {/* Business Hours */}
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-secondary mb-2">
-                Business Hours
-              </h3>
-              <p className="text-secondary-600">
-                Mon-Fri: 8AM-5PM
-                <br />
-                Sat: 9AM-2PM
-                <br />
-                Sun: Closed
-              </p>
-            </div>
+            <Card className="bg-gray-900 border-orange-500">
+              <CardHeader>
+                <Clock className="w-12 h-12 text-orange-500 mx-auto mb-4" />
+                <CardTitle className="text-2xl font-bold text-orange-500 mb-2">Business Hours</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-orange-300">
+                  Mon-Fri: 8AM-5PM
+                  <br />
+                  Sat: 9AM-2PM
+                  <br />
+                  Sun: Closed
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <ContactForm />
@@ -81,121 +82,89 @@ export default function ContactPage() {
       </section>
 
       {/* Service Areas */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-black">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-secondary mb-8 text-center">
-              Our Service Areas
-            </h2>
-            
+            <h2 className="text-4xl font-bold text-orange-500 mb-12 text-center">Our Service Areas</h2>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Alabama Service Areas */}
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold text-secondary mb-4 flex items-center">
-                  <MapPin className="w-5 h-5 mr-2 text-primary" />
-                  Alabama Coverage
-                </h3>
-                <ul className="grid grid-cols-2 gap-4">
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Birmingham
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Montgomery
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Huntsville
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Mobile
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Auburn
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Tuscaloosa
-                  </li>
-                </ul>
-              </div>
+              <Card className="bg-gray-900 border-orange-500">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold text-orange-500 mb-4 flex items-center">
+                    <MapPin className="w-6 h-6 mr-2 text-orange-500" />
+                    Alabama Coverage
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="grid grid-cols-2 gap-4">
+                    {["Birmingham", "Montgomery", "Huntsville", "Mobile", "Auburn", "Tuscaloosa"].map((city) => (
+                      <li key={city} className="flex items-center text-orange-300">
+                        <div className="w-2 h-2 bg-orange-500 transform rotate-45 mr-2" />
+                        {city}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
 
               {/* Georgia Service Areas */}
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold text-secondary mb-4 flex items-center">
-                  <MapPin className="w-5 h-5 mr-2 text-primary" />
-                  Georgia Coverage
-                </h3>
-                <ul className="grid grid-cols-2 gap-4">
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Atlanta
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Augusta
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Columbus
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Macon
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Savannah
-                  </li>
-                  <li className="flex items-center text-secondary-600">
-                    <div className="w-2 h-2 bg-primary transform rotate-45 mr-2" />
-                    Athens
-                  </li>
-                </ul>
-              </div>
+              <Card className="bg-gray-900 border-orange-500">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold text-orange-500 mb-4 flex items-center">
+                    <MapPin className="w-6 h-6 mr-2 text-orange-500" />
+                    Georgia Coverage
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="grid grid-cols-2 gap-4">
+                    {["Atlanta", "Augusta", "Columbus", "Macon", "Savannah", "Athens"].map((city) => (
+                      <li key={city} className="flex items-center text-orange-300">
+                        <div className="w-2 h-2 bg-orange-500 transform rotate-45 mr-2" />
+                        {city}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-secondary mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            
+            <h2 className="text-4xl font-bold text-orange-500 mb-12 text-center">Frequently Asked Questions</h2>
+
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-bold text-secondary mb-2">
-                  How quickly can you respond to emergency situations?
-                </h3>
-                <p className="text-secondary-600">
-                  We offer 24/7 emergency response services and typically arrive within 2-4 hours for urgent situations.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-bold text-secondary mb-2">
-                  Do you provide free estimates?
-                </h3>
-                <p className="text-secondary-600">
-                  Yes, we provide free, detailed estimates for all roofing projects. Our expert team will assess your needs and provide a comprehensive quote.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-bold text-secondary mb-2">
-                  What warranties do you offer?
-                </h3>
-                <p className="text-secondary-600">
-                  We offer lifetime warranties on workmanship and materials for most roofing systems, with transferable options available.
-                </p>
-              </div>
+              {[
+                {
+                  question: "How quickly can you respond to emergency situations?",
+                  answer:
+                    "We offer 24/7 emergency response services and typically arrive within 2-4 hours for urgent situations.",
+                },
+                {
+                  question: "Do you provide free estimates?",
+                  answer:
+                    "Yes, we provide free, detailed estimates for all roofing projects. Our expert team will assess your needs and provide a comprehensive quote.",
+                },
+                {
+                  question: "What warranties do you offer?",
+                  answer:
+                    "We offer lifetime warranties on workmanship and materials for most roofing systems, with transferable options available.",
+                },
+              ].map((faq, index) => (
+                <Card key={index} className="bg-black border-orange-500">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-bold text-orange-500">{faq.question}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-orange-300">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </div>
@@ -216,6 +185,6 @@ export default function ContactPage() {
       </div>
       <Footer />
     </div>
-  );
+  )
 }
 

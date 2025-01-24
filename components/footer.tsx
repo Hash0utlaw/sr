@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react'
+import Link from "next/link"
+import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -40,7 +40,10 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/financing" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
+                <Link
+                  href="/financing"
+                  className="text-orange-300 hover:text-orange-500 transition-colors hover-lift"
+                >
                   Financing
                 </Link>
               </li>
@@ -57,7 +60,10 @@ export function Footer() {
             <h4 className="text-lg font-bold mb-4 text-orange-500">Our Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/residential" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
+                <Link
+                  href="/residential"
+                  className="text-orange-300 hover:text-orange-500 transition-colors hover-lift"
+                >
                   Residential Roofing
                 </Link>
               </li>
@@ -67,7 +73,10 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/repairs" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
+                <Link
+                  href="/residential/roof-repairs"
+                  className="text-orange-300 hover:text-orange-500 transition-colors hover-lift"
+                >
                   Roof Repairs
                 </Link>
               </li>
@@ -85,21 +94,28 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start space-x-2">
                 <Phone className="w-5 h-5 mt-1 text-orange-500 flex-shrink-0" />
-                <a href="tel:(704) 578-4756" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
-                (704) 578-4756
+                <a
+                  href="tel:(770) 627-7663"
+                  className="text-orange-300 hover:text-orange-500 transition-colors hover-lift"
+                >
+                  (770) 627-7663
                 </a>
               </li>
               <li className="flex items-start space-x-2">
                 <Mail className="w-5 h-5 mt-1 text-orange-500 flex-shrink-0" />
-                <a href="mailto:davis@summitroofingprofessionals.com" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
-                davis@summitroofingprofessionals.com
+                <a
+                  href="mailto:info@summitroofing.com"
+                  className="text-orange-300 hover:text-orange-500 transition-colors hover-lift"
+                >
+                  info@summitroofing.com
                 </a>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 mt-1 text-orange-500 flex-shrink-0" />
                 <span className="text-orange-300">
-                  3415 Confetti Blush Dr<br />
-                  Columbus, GA 31909
+                  123 Summit Drive
+                  <br />
+                  Birmingham, AL 35242
                 </span>
               </li>
             </ul>
@@ -114,4 +130,5 @@ export function Footer() {
     </footer>
   )
 }
+
 

@@ -12,7 +12,7 @@ export default function ModifiedBitumenPage() {
       <ServiceHeader 
         title="Modified Bitumen Roofing"
         description="Durable and flexible roofing solution for commercial buildings"
-        backgroundImage="/Users/hashoutlaw/Desktop/davis/SummitR/sr/public/Commercial /ModifiedBitumen.png"
+        backgroundImage="/residential/mobit-hero.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -42,7 +42,7 @@ export default function ModifiedBitumenPage() {
           </div>
           <div className="animate-fade-in-right relative h-[400px]">
             <Image 
-              src="/modified-bitumen-roofing.jpg" 
+              src="/residential/mobit-side.png" 
               alt="Modified Bitumen Roofing" 
               fill
               className="rounded-lg shadow-lg object-cover" 

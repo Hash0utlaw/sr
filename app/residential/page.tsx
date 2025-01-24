@@ -25,12 +25,6 @@ const residentialRoofingTypes = [
     imageUrl: "/residential/tile-hero.png"
   },
   {
-    title: "Flat Roofing",
-    description: "Modern and versatile roofing solution for contemporary homes",
-    href: "/residential/flat-roofing",
-    imageUrl: "/images/residential/flat-roofing.jpg"
-  },
-  {
     title: "Roof Repairs and Maintenance",
     description: "Expert care to extend the life of your residential roof",
     href: "/residential/roof-repairs",
