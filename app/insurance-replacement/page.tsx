@@ -13,7 +13,7 @@ export default function InsuranceReplacementPage() {
       <ServiceHeader 
         title="Insurance-Covered Roof Replacement"
         description="Expert assistance with insurance claims for complete roof replacement"
-        backgroundImage="/insurance/hail-hero.png"
+        backgroundImage="/images/insurance-replacement-bg.jpg"
       />
       <Section>
         <div className="space-y-6 animate-fade-in-up">
@@ -81,7 +81,7 @@ export default function InsuranceReplacementPage() {
         <div className="text-center space-y-6">
           <h2 className="text-3xl font-bold">Ready to Get Started?</h2>
           <p className="text-lg max-w-2xl mx-auto">
-            Don&apos;t wait for leaks to appear. Contact us today for a free inspection and let us help you navigate the insurance claim process.
+            Don't wait for leaks to appear. Contact us today for a free inspection and let us help you navigate the insurance claim process.
           </p>
           <Link 
             href="/contact"
@@ -95,4 +95,5 @@ export default function InsuranceReplacementPage() {
     </div>
   )
 }
+
 
