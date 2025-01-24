@@ -29,16 +29,16 @@ export default function ContactPage() {
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <Phone className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold text-secondary mb-2">
-                24/7 Emergency Service
+                Rapid Emergency Response
               </h3>
               <p className="text-secondary-600 mb-4">
                 Available around the clock for urgent roofing needs
               </p>
               <a
-                href="tel:1-800-SUMMIT-1"
+                href="tel:704-578-4756"
                 className="text-primary font-semibold hover:text-primary-dark"
               >
-                1-800-SUMMIT-1
+                704-578-4756
               </a>
             </div>
 

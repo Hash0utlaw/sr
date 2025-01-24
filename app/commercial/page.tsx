@@ -78,7 +78,7 @@ export default function CommercialRoofing() {
               <li>Energy-efficient roofing options</li>
               <li>Minimal business disruption</li>
               <li>Comprehensive warranties</li>
-              <li>24/7 emergency services</li>
+              <li>Rapid emergency services</li>
             </ul>
           </div>
           <div className="animate-fade-in-right relative h-[400px]">

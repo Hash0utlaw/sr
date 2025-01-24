@@ -10,7 +10,7 @@ export default function EmergencyServices() {
       <NavBar />
       <ServiceHeader 
         title="Emergency Roofing Services"
-        description="24/7 rapid response for urgent roofing needs"
+        description="Rapid response for urgent roofing needs"
         backgroundImage="/emergency/emergency.png"
       />
       <Section>
@@ -27,7 +27,7 @@ export default function EmergencyServices() {
             <h2 className="text-3xl font-bold">Fast, Reliable Emergency Roofing Solutions</h2>
             <p>When disaster strikes, Summit Roofing is here to help. Our emergency roofing services are designed to quickly address urgent issues and prevent further damage to your property.</p>
             <ul className="list-disc list-inside space-y-2">
-              <li>24/7 Emergency Response</li>
+              <li>Rapid Emergency Response</li>
               <li>Rapid Leak Repairs</li>
               <li>Storm Damage Mitigation</li>
               <li>Temporary Roofing Solutions</li>

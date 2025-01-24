@@ -65,7 +65,7 @@ export function NavBar() {
               className="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-bold flex items-center space-x-2"
             >
               <Phone size={18} />
-              <span className="hidden xl:inline">(704) 578-4756</span>
+              <span className="hidden xl:inline">Contact Us</span>
             </a>
           </div>
 

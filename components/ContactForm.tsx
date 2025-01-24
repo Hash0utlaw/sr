@@ -221,8 +221,8 @@ export default function ContactForm() {
             <Phone className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Phone</h3>
-              <p className="text-white">1-800-SUMMIT-1</p>
-              <p className="text-sm text-gray-300">Available 24/7 for emergencies</p>
+              <p className="text-white">704-578-4756</p>
+              <p className="text-sm text-gray-300">Rapid response for emergencies</p>
             </div>
           </div>
 
@@ -230,7 +230,7 @@ export default function ContactForm() {
             <Mail className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Email</h3>
-              <p className="text-white">info@summitroofing.com</p>
+              <p className="text-white">davis@summitroofingprofessionals.com</p>
               <p className="text-sm text-gray-300">We&apos;ll respond within 24 hours</p>
             </div>
           </div>
@@ -239,8 +239,8 @@ export default function ContactForm() {
             <MapPin className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Office Location</h3>
-              <p className="text-white">123 Summit Drive</p>
-              <p className="text-white">Birmingham, AL 35242</p>
+              <p className="text-white">3415 Confetti Blush DR</p>
+              <p className="text-white">Columbus, GA 31909</p>
             </div>
           </div>
 

@@ -27,7 +27,7 @@ export default function StormDamagePage() {
               {[
                 {
                   icon: CloudLightning,
-                  title: "24/7 Response",
+                  title: "Rapid Response",
                   description: "Immediate emergency service",
                 },
                 {
