@@ -19,6 +19,10 @@ const schema = yup
     message: yup.string().required("Please enter your message"),
     preferredContact: yup.string().required("Please select preferred contact method"),
     propertyType: yup.string().required("Please select property type"),
+    address: yup.string().required("Address is required"),
+    serviceNeeded: yup.string().required("Please select service needed"),
+    isHomeowner: yup.string().required("Please specify if you are the homeowner"),
+    hasRoofDamage: yup.string().required("Please specify if you have roof leaks or damage"),
   })
   .required()
 
@@ -87,7 +91,7 @@ export default function ContactForm() {
 
         {submitSuccess && (
           <div className="mb-6 p-4 bg-green-900 text-green-100 rounded-md border border-green-500">
-            Thank you for contacting us! We&apos;ll be in touch shortly.
+            Thank you for contacting us! We'll be in touch shortly.
           </div>
         )}
 
@@ -175,6 +179,59 @@ export default function ContactForm() {
             </div>
           </div>
 
+          {/* Address */}
+          <div>
+            <label className="block text-sm font-medium text-orange-500 mb-1">Address*</label>
+            <input
+              type="text"
+              {...register("address")}
+              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
+            />
+            {errors.address && <p className="mt-1 text-sm text-red-400">{errors.address.message}</p>}
+          </div>
+
+          {/* Service Needed */}
+          <div>
+            <label className="block text-sm font-medium text-orange-500 mb-1">Service Needed*</label>
+            <select
+              {...register("serviceNeeded")}
+              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
+            >
+              <option value="">Select service needed</option>
+              <option value="replacement">Replacement</option>
+              <option value="repair">Repair</option>
+            </select>
+            {errors.serviceNeeded && <p className="mt-1 text-sm text-red-400">{errors.serviceNeeded.message}</p>}
+          </div>
+
+          {/* Homeowner Status */}
+          <div>
+            <label className="block text-sm font-medium text-orange-500 mb-1">Are you the homeowner?*</label>
+            <select
+              {...register("isHomeowner")}
+              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
+            >
+              <option value="">Select option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            {errors.isHomeowner && <p className="mt-1 text-sm text-red-400">{errors.isHomeowner.message}</p>}
+          </div>
+
+          {/* Roof Damage */}
+          <div>
+            <label className="block text-sm font-medium text-orange-500 mb-1">Do you have roof leaks or damage?*</label>
+            <select
+              {...register("hasRoofDamage")}
+              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
+            >
+              <option value="">Select option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            {errors.hasRoofDamage && <p className="mt-1 text-sm text-red-400">{errors.hasRoofDamage.message}</p>}
+          </div>
+
           {/* Preferred Contact Method */}
           <div>
             <label className="block text-sm font-medium text-orange-500 mb-1">Preferred Contact Method*</label>
@@ -221,8 +278,8 @@ export default function ContactForm() {
             <Phone className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Phone</h3>
-              <p className="text-white">704-578-4756</p>
-              <p className="text-sm text-gray-300">Rapid response for emergencies</p>
+              <p className="text-white">1-800-SUMMIT-1</p>
+              <p className="text-sm text-gray-300">Available 24/7 for emergencies</p>
             </div>
           </div>
 
@@ -230,8 +287,8 @@ export default function ContactForm() {
             <Mail className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Email</h3>
-              <p className="text-white">davis@summitroofingprofessionals.com</p>
-              <p className="text-sm text-gray-300">We&apos;ll respond within 24 hours</p>
+              <p className="text-white">info@summitroofing.com</p>
+              <p className="text-sm text-gray-300">We'll respond within 24 hours</p>
             </div>
           </div>
 
@@ -239,8 +296,8 @@ export default function ContactForm() {
             <MapPin className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Office Location</h3>
-              <p className="text-white">3415 Confetti Blush DR</p>
-              <p className="text-white">Columbus, GA 31909</p>
+              <p className="text-white">123 Summit Drive</p>
+              <p className="text-white">Birmingham, AL 35242</p>
             </div>
           </div>
 
@@ -251,7 +308,7 @@ export default function ContactForm() {
               <p className="text-white">Monday - Friday: 8:00 AM - 5:00 PM</p>
               <p className="text-white">Saturday: 9:00 AM - 2:00 PM</p>
               <p className="text-white">Sunday: Closed</p>
-              <p className="text-sm text-gray-300 mt-1">Rapid Emergency Service Available</p>
+              <p className="text-sm text-gray-300 mt-1">24/7 Emergency Service Available</p>
             </div>
           </div>
         </div>
@@ -259,3 +316,4 @@ export default function ContactForm() {
     </div>
   )
 }
+
