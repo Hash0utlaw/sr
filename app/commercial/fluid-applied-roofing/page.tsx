@@ -13,7 +13,7 @@ export default function FluidAppliedRoofingPage() {
       <ServiceHeader
         title="Fluid-Applied Roofing Systems"
         description="Advanced seamless roofing solutions for commercial buildings"
-        backgroundImage="/commercial-fluid-applied.jpg"
+        backgroundImage="/coating/coating-1.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -42,7 +42,7 @@ export default function FluidAppliedRoofingPage() {
           </div>
           <div className="animate-fade-in-right relative h-96">
             <Image 
-              src="/fluid-applied-roofing.jpg" 
+              src="/coating/coating-2.png" 
               alt="Fluid-Applied Roofing" 
               fill
               className="rounded-lg shadow-lg object-cover"

@@ -13,7 +13,7 @@ export default function InspectionsMaintenancePage() {
       <ServiceHeader
         title="Roof Inspections & Maintenance"
         description="Comprehensive evaluations and preventive care for commercial roofs"
-        backgroundImage="/commercial-inspections.jpg"
+        backgroundImage="/roof-inspec/roof-inspec-1.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -57,7 +57,7 @@ export default function InspectionsMaintenancePage() {
           </div>
           <div className="animate-fade-in-right relative h-96">
             <Image 
-              src="/roof-inspection.jpg" 
+              src="/roof-inspec/roof-inspec-2.png" 
               alt="Roof Inspection" 
               fill
               className="rounded-lg shadow-lg object-cover"

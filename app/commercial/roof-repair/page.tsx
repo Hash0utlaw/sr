@@ -13,7 +13,7 @@ export default function CommercialRoofRepairPage() {
       <ServiceHeader
         title="Commercial Roof Repair"
         description="Expert repairs for all types of commercial roofing systems"
-        backgroundImage="/commercial-repair.jpg"
+        backgroundImage="/roof-repair/roof-repair-2.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -28,7 +28,7 @@ export default function CommercialRoofRepairPage() {
               {[
                 {
                   icon: Clock,
-                  title: "24/7 Emergency Service",
+                  title: "Rapid Emergency Service",
                   description: "Rapid response to urgent issues",
                 },
                 {
@@ -57,7 +57,7 @@ export default function CommercialRoofRepairPage() {
           </div>
           <div className="animate-fade-in-right relative h-96">
             <Image 
-              src="/commercial-roof-repair.jpg" 
+              src="/roof-repair/roof-repair-1.png" 
               alt="Commercial Roof Repair" 
               fill
               className="rounded-lg shadow-lg object-cover"

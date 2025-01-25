@@ -11,16 +11,16 @@ export default function CoolRoofingPage() {
     <div className="min-h-screen bg-black text-orange-500">
       <NavBar />
       <ServiceHeader
-        title="Cool Roofing Systems"
+        title="Energy-Efficient Roofing Systems"
         description="Energy-efficient roofing solutions for sustainable buildings"
-        backgroundImage="/commercial-cool-roofing.jpg"
+        backgroundImage="/coating/coating-3.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4 animate-fade-in-left">
             <h2 className="text-3xl font-bold">Energy-Efficient Roofing Solutions</h2>
             <p className="text-lg text-orange-300">
-              Cool roofing systems are designed to reflect more sunlight and absorb less heat than traditional roofing
+              Energy-efficient roofing systems are designed to reflect more sunlight and absorb less heat than traditional roofing
               materials. This innovative approach can significantly reduce energy costs and improve building comfort.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-6">
@@ -56,7 +56,7 @@ export default function CoolRoofingPage() {
           </div>
           <div className="animate-fade-in-right relative h-96">
             <Image 
-              src="/cool-roofing-system.jpg" 
+              src="/coating/coating-5.png" 
               alt="Cool Roofing System" 
               fill
               className="rounded-lg shadow-lg object-cover"
@@ -66,7 +66,7 @@ export default function CoolRoofingPage() {
       </Section>
 
       <Section dark>
-        <h2 className="text-3xl font-bold text-center mb-8">Cool Roofing Options</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">Energy-Efficient Roofing Options</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
@@ -85,15 +85,6 @@ export default function CoolRoofingPage() {
                 "Can be applied to existing roofs",
                 "Multiple color options",
                 "Extends roof life",
-              ],
-            },
-            {
-              title: "Built-Up Cool Roofing",
-              features: [
-                "Traditional installation method",
-                "Superior durability",
-                "Excellent waterproofing",
-                "Long-term performance",
               ],
             },
           ].map((option, index) => (

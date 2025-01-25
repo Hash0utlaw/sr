@@ -13,7 +13,7 @@ export default function StormDamagePage() {
       <ServiceHeader
         title="Storm Damage Restoration"
         description="Rapid response and restoration for weather-related damage"
-        backgroundImage="/commercial-storm-damage.jpg"
+        backgroundImage="/insurance/hail-hero.png"
       />
       <Section>
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -56,7 +56,7 @@ export default function StormDamagePage() {
           </div>
           <div className="animate-fade-in-right relative h-96">
             <Image 
-              src="/storm-damage-repair.jpg" 
+              src="/roof-repair/commercial-repair-1.png" 
               alt="Storm Damage Repair" 
               fill
               className="rounded-lg shadow-lg object-cover"
