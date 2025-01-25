@@ -47,8 +47,6 @@ export default function MetalShinglesRoofing() {
         "/specialty/metal-shingle-2.png",
         "/specialty/metal-shingle-3.png",
         "/specialty/metal-shingle-4.png",
-        "/specialty/metal-shingle-5.png",
-        "/specialty/metal-shingle-6.png"
       ]}
     />
   );
