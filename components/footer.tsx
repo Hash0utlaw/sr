@@ -16,12 +16,6 @@ export function Footer() {
               <a href="#" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
-                <Instagram className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
-                <Twitter className="w-6 h-6" />
-              </a>
             </div>
           </div>
 
