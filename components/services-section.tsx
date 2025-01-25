@@ -23,7 +23,7 @@ const services = [
   },
   {
     icon: Clock,
-    title: "24/7 Emergency Service",
+    title: "Rapid Emergency Service",
     description: "Round-the-clock emergency response for urgent roofing needs"
   },
   {
