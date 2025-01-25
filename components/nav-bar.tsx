@@ -33,41 +33,43 @@ export function NavBar() {
     <nav
       className={cn(
         "fixed w-full z-50 transition-all duration-300",
-        isScrolled ? "bg-black shadow-lg" : "bg-transparent",
+        isScrolled ? "bg-black/95 shadow-lg" : "bg-transparent",
       )}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between py-4 lg:py-6">
-          <Link href="/" className="flex items-center">
+        <div className="flex items-center justify-between h-24">
+          <Link href="/" className="flex-shrink-0">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SummitRoofing.PNG-U6d5YN8YnerXboDL2Sdes3jApfffBA.png"
               alt="Summit Roofing"
-              width={250}
+              width={200}
               height={100}
-              className="h-40 w-auto lg:h-50"
+              className="h-32 w-auto lg:h-21" 
               priority
             />
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-1 xl:space-x-4">
+          <div className="hidden lg:flex items-center space-x-6">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm xl:text-base font-medium text-white hover:text-orange-400 transition-colors duration-200 px-3 py-2 rounded-md hover:bg-orange-500/10"
+                className="text-sm font-medium text-white hover:text-orange-400 transition-colors duration-200"
               >
                 {item.label}
               </Link>
             ))}
-            <a
-              href="tel:(704) 578-4756"
-              className="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-bold flex items-center space-x-2"
-            >
-              <Phone size={18} />
-              <span className="hidden xl:inline">Contact Us</span>
-            </a>
           </div>
+
+          {/* Phone number */}
+          <a
+            href="tel:(704) 578-4756"
+            className="hidden lg:flex items-center bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-bold"
+          >
+            <Phone size={18} className="mr-2" />
+            <span>(704) 578-4756</span>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -85,7 +87,7 @@ export function NavBar() {
             isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none",
           )}
         >
-          <div className="flex flex-col h-full justify-center items-center space-y-8 p-4">
+          <div className="flex flex-col h-full justify-center items-center space-y-6 p-4">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
@@ -110,4 +112,7 @@ export function NavBar() {
     </nav>
   )
 }
+
+
+
 
