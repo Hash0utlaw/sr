@@ -27,7 +27,7 @@ const commercialServices = [
   },
   {
     icon: Sun,
-    title: "Cool Roofing Systems",
+    title: "Energy-Efficient Roofing Systems",
     description: "Energy-efficient solutions to reduce cooling costs",
     href: "/commercial/cool-roofing"
   },
