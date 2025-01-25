@@ -278,8 +278,8 @@ export default function ContactForm() {
             <Phone className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Phone</h3>
-              <p className="text-white">1-800-SUMMIT-1</p>
-              <p className="text-sm text-gray-300">Available 24/7 for emergencies</p>
+              <p className="text-white">704-578-4856</p>
+              <p className="text-sm text-gray-300">Rapid response for emergencies</p>
             </div>
           </div>
 
@@ -287,7 +287,7 @@ export default function ContactForm() {
             <Mail className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Email</h3>
-              <p className="text-white">info@summitroofing.com</p>
+              <p className="text-white">davis@summitroofingprofessionals.com</p>
               <p className="text-sm text-gray-300">We&apos;ll respond within 24 hours</p>
             </div>
           </div>
@@ -296,8 +296,8 @@ export default function ContactForm() {
             <MapPin className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Office Location</h3>
-              <p className="text-white">123 Summit Drive</p>
-              <p className="text-white">Birmingham, AL 35242</p>
+              <p className="text-white">3415 Confetti Blush Dr</p>
+              <p className="text-white">Columbus, GA 31909</p>
             </div>
           </div>
 
@@ -308,7 +308,7 @@ export default function ContactForm() {
               <p className="text-white">Monday - Friday: 8:00 AM - 5:00 PM</p>
               <p className="text-white">Saturday: 9:00 AM - 2:00 PM</p>
               <p className="text-white">Sunday: Closed</p>
-              <p className="text-sm text-gray-300 mt-1">24/7 Emergency Service Available</p>
+              <p className="text-sm text-gray-300 mt-1">Rapid Emergency Service Available</p>
             </div>
           </div>
         </div>
