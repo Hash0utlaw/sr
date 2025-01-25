@@ -68,7 +68,7 @@ export function NavBar() {
             className="hidden lg:flex items-center bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-bold"
           >
             <Phone size={18} className="mr-2" />
-            <span>(704) 578-4756</span>
+            <span>Contact Us</span>
           </a>
 
           {/* Mobile Menu Button */}
