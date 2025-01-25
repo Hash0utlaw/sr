@@ -42,9 +42,9 @@ export function NavBar() {
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SummitRoofing.PNG-U6d5YN8YnerXboDL2Sdes3jApfffBA.png"
               alt="Summit Roofing"
-              width={200}
+              width={250}
               height={100}
-              className="h-16 w-auto lg:h-20"
+              className="h-40 w-auto lg:h-50"
               priority
             />
           </Link>
