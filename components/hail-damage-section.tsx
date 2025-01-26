@@ -31,7 +31,7 @@ export function HailDamageSection() {
         </div>
         <div className="relative h-[400px] rounded-lg overflow-hidden">
           <Image
-            src="/images/hail-damage-example.jpg"
+            src="/insurance/hail-damage.png"
             alt="Hail Damage Example"
             fill
             className="object-cover"
@@ -78,12 +78,7 @@ export function HailDamageSection() {
         <p className="text-sm text-orange-300">
           *Terms and conditions apply. Coverage and premium impacts may vary by insurance provider and policy terms.
         </p>
-        <Link 
-          href="/contact"
-          className="inline-block bg-orange-500 text-black px-8 py-3 rounded-full hover:bg-orange-600 transition-colors"
-        >
-          Schedule Your Free Inspection
-        </Link>
+       
       </div>
     </div>
   )
