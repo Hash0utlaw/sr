@@ -296,7 +296,7 @@ export default function ContactForm() {
             <MapPin className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Office Location</h3>
-              <p className="text-white">3415 Confetti Blush Dr</p>
+              <p className="text-white">Columbus Office</p>
               <p className="text-white">Columbus, GA 31909</p>
             </div>
           </div>
@@ -305,9 +305,9 @@ export default function ContactForm() {
             <Clock className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Business Hours</h3>
-              <p className="text-white">Monday - Friday: 8:00 AM - 5:00 PM</p>
-              <p className="text-white">Saturday: 9:00 AM - 2:00 PM</p>
-              <p className="text-white">Sunday: Closed</p>
+              <p className="text-white">Monday - Friday: 6:00 AM - 6:00 PM</p>
+              <p className="text-white">Saturday: 6:00 AM - 6:00 PM</p>
+              <p className="text-white">Sunday: 6:00 AM - 6:00 PM</p>
               <p className="text-sm text-gray-300 mt-1">Rapid Emergency Service Available</p>
             </div>
           </div>

@@ -63,13 +63,7 @@ export function NavBar() {
           </div>
 
           {/* Phone number */}
-          <a
-            href="tel:(704) 578-4756"
-            className="hidden lg:flex items-center bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-bold"
-          >
-            <Phone size={18} className="mr-2" />
-            <span>Contact Us</span>
-          </a>
+       
 
           {/* Mobile Menu Button */}
           <button
@@ -98,14 +92,7 @@ export function NavBar() {
                 {item.label}
               </Link>
             ))}
-            <a
-              href="tel:(704) 578-4756"
-              className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-colors duration-200 font-bold text-center flex items-center space-x-2"
-              onClick={() => setIsOpen(false)}
-            >
-              <Phone size={18} />
-              <span>(704) 578-4756</span>
-            </a>
+          
           </div>
         </div>
       </div>

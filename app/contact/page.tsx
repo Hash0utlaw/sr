@@ -32,12 +32,7 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-orange-300 mb-4">Available around the clock for urgent roofing needs</p>
-                <a
-                  href="tel:704-578-4756"
-                  className="text-orange-500 font-semibold text-xl hover:text-orange-400 transition-colors"
-                >
-                  Contact Us
-                </a>
+               
               </CardContent>
             </Card>
 
@@ -60,11 +55,11 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-orange-300">
-                  Mon-Fri: 8AM-5PM
+                  Mon-Fri: 6AM-6PM
                   <br />
-                  Sat: 9AM-2PM
+                  Sat: 6AM-6PM
                   <br />
-                  Sun: Closed
+                  Sun: 6AM-6PM
                 </p>
               </CardContent>
             </Card>
@@ -98,7 +93,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="grid grid-cols-2 gap-4">
-                    {["Birmingham", "Montgomery", "Huntsville", "Mobile", "Auburn", "Tuscaloosa"].map((city) => (
+                    {["Auburn", "Opelika", "Smiths Station", "Phenix City", "Alexander City", "Valley AL", "Lanett AL"].map((city) => (
                       <li key={city} className="flex items-center text-orange-300">
                         <div className="w-2 h-2 bg-orange-500 transform rotate-45 mr-2" />
                         {city}
@@ -118,7 +113,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="grid grid-cols-2 gap-4">
-                    {["Atlanta", "Augusta", "Columbus", "Macon", "Savannah", "Athens"].map((city) => (
+                    {["Columbus", "Lagrange", "Pine Mountain", "Newnan", "Peachtree City", "Tyrone", "Sharpsburg"].map((city) => (
                       <li key={city} className="flex items-center text-orange-300">
                         <div className="w-2 h-2 bg-orange-500 transform rotate-45 mr-2" />
                         {city}

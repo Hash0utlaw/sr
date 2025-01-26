@@ -107,7 +107,7 @@ export function Footer() {
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 mt-1 text-orange-500 flex-shrink-0" />
                 <span className="text-orange-300">
-                  3415 Confetti Blush DR
+                  Columbus Office
                   <br />
                   Columbus, GA 31909
                 </span>
