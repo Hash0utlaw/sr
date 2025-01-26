@@ -19,13 +19,6 @@ export function CTASection() {
             >
               Get Free Estimate
             </Link>
-            <a 
-              href="tel:(770) 627-7663"
-              className="flex items-center gap-2 text-xl font-bold text-[#ff7b00] hover:text-[#ff9433] hover-lift"
-            >
-              <Phone className="w-6 h-6" />
-              (770) 627-7663
-            </a>
           </div>
         </div>
       </div>

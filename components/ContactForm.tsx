@@ -279,7 +279,7 @@ export default function ContactForm() {
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Phone</h3>
               <p className="text-white">704-578-4856</p>
-              <p className="text-sm text-gray-300">Rapid response for emergencies</p>
+              
             </div>
           </div>
 

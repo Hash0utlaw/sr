@@ -36,7 +36,7 @@ export default function ContactPage() {
                   href="tel:704-578-4756"
                   className="text-orange-500 font-semibold text-xl hover:text-orange-400 transition-colors"
                 >
-                  704-578-4756
+                  Contact Us
                 </a>
               </CardContent>
             </Card>
