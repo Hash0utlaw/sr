@@ -138,7 +138,7 @@ export default function ContactPage() {
                 {
                   question: "How quickly can you respond to emergency situations?",
                   answer:
-                    "We offer 24/7 emergency response services and typically arrive within 2-4 hours for urgent situations.",
+                    "We offer rapid emergency response services",
                 },
                 {
                   question: "Do you provide free estimates?",
