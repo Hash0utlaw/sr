@@ -279,15 +279,14 @@ export default function ContactForm() {
             <div>
               <h3 className="font-semibold mb-1 text-orange-500">Phone</h3>
               <p className="text-white">704-578-4856</p>
-              
             </div>
           </div>
 
           <div className="flex items-start space-x-4">
             <Mail className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
-            <div>
+            <div className="min-w-0">
               <h3 className="font-semibold mb-1 text-orange-500">Email</h3>
-              <p className="text-white">davis@summitroofingprofessionals.com</p>
+              <p className="text-white break-words">davis@summitroofingprofessionals.com</p>
               <p className="text-sm text-gray-300">We&apos;ll respond within 24 hours</p>
             </div>
           </div>
@@ -316,3 +315,5 @@ export default function ContactForm() {
     </div>
   )
 }
+
+
