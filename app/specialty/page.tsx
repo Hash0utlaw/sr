@@ -22,7 +22,7 @@ const specialtyTypes = [
     title: "Tile Roofing",
     description: "Durable and aesthetically pleasing clay or concrete tiles",
     href: "/specialty/tile",
-    imageUrl: "/specialty/tile-specail.png",
+    imageUrl: "/specialty/tile-gallery-4.png",
   },
   {
     title: "Metal Shingles",
