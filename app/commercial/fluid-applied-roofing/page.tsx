@@ -41,9 +41,9 @@ export default function FluidAppliedRoofingPage() {
             </ul>
           </div>
           <div className="animate-fade-in-right relative h-96">
-            <Image 
-              src="/coating/coating-2.png" 
-              alt="Fluid-Applied Roofing" 
+            <Image
+              src="/coating/coating-2.png"
+              alt="Fluid-Applied Roofing"
               fill
               className="rounded-lg shadow-lg object-cover"
             />
@@ -52,37 +52,37 @@ export default function FluidAppliedRoofingPage() {
       </Section>
 
       <Section dark>
-        <h2 className="text-3xl font-bold text-center mb-8">Application Process</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">Key Benefits</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: "Surface Preparation",
-              description: "Thorough cleaning and repair of existing roof surface",
+              title: "Cost-Effective",
+              description: "Save on replacement costs and reduce long-term maintenance expenses",
             },
             {
-              title: "Base Coat Application",
-              description: "Application of primary waterproofing layer",
+              title: "Energy Savings",
+              description: "Reflective properties reduce cooling costs and energy consumption",
             },
             {
-              title: "Reinforcement",
-              description: "Installation of fabric reinforcement in critical areas",
+              title: "Minimal Disruption",
+              description: "Installation without tear-off means business continues as usual",
             },
             {
-              title: "Additional Coats",
-              description: "Application of subsequent layers for durability",
+              title: "Extended Lifespan",
+              description: "Add 10-20 years to your existing roof's service life",
             },
             {
-              title: "Top Coat",
-              description: "Final protective layer with UV resistance",
+              title: "Sustainable Solution",
+              description: "Reduce landfill waste by avoiding complete roof replacement",
             },
             {
-              title: "Quality Inspection",
-              description: "Thorough evaluation of completed system",
+              title: "Weather Resistant",
+              description: "Superior protection against UV rays, rain, and extreme temperatures",
             },
-          ].map((step, index) => (
+          ].map((benefit, index) => (
             <div key={index} className="bg-gray-900 p-6 rounded-lg border border-orange-500">
-              <h3 className="text-xl font-bold mb-2 text-orange-500">{step.title}</h3>
-              <p className="text-orange-300">{step.description}</p>
+              <h3 className="text-xl font-bold mb-2 text-orange-500">{benefit.title}</h3>
+              <p className="text-orange-300">{benefit.description}</p>
             </div>
           ))}
         </div>
@@ -106,3 +106,4 @@ export default function FluidAppliedRoofingPage() {
     </div>
   )
 }
+

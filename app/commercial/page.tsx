@@ -77,7 +77,7 @@ export default function CommercialRoofing() {
           </div>
           <div className="animate-fade-in-right relative h-[400px]">
             <Image 
-              src="/commercial /tpo-gallery-1.png" 
+              src="/coating/coating-2.png" 
               alt="Commercial Roofing" 
               fill
               className="rounded-lg shadow-lg object-cover" 
