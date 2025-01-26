@@ -29,7 +29,7 @@ export default function RoofRepairsPage() {
           </ul>
           <h3 className="text-2xl font-semibold">Why Choose Our Repair Services?</h3>
           <ul className="list-disc list-inside space-y-2">
-            <li>24/7 emergency repair services</li>
+            <li>Rapid emergency repair services</li>
             <li>Experienced and certified technicians</li>
             <li>Use of high-quality materials</li>
             <li>Comprehensive roof inspections</li>
