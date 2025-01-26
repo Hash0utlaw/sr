@@ -33,7 +33,7 @@ const services = [
   {
     icon: Clock,
     title: "Emergency Services",
-    description: "24/7 emergency roofing repairs and temporary solutions",
+    description: "Rapid emergency roofing repairs and temporary solutions",
     href: "/emergency"
   },
   {
