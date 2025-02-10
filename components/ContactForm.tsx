@@ -8,38 +8,16 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 const schema = yup
   .object({
-    firstName: yup.string().required("First name is required"),
-    lastName: yup.string().required("Last name is required"),
-    email: yup.string().email("Please enter a valid email").required("Email is required"),
+    name: yup.string().required("Name is required"),
     phone: yup
       .string()
       .matches(/^[0-9()-.\s]+$/, "Please enter a valid phone number")
       .required("Phone number is required"),
-    serviceType: yup.string().required("Please select a service"),
-    message: yup.string().required("Please enter your message"),
-    preferredContact: yup.string().required("Please select preferred contact method"),
-    propertyType: yup.string().required("Please select property type"),
     address: yup.string().required("Address is required"),
-    serviceNeeded: yup.string().required("Please select service needed"),
-    isHomeowner: yup.string().required("Please specify if you are the homeowner"),
-    hasRoofDamage: yup.string().required("Please specify if you have roof leaks or damage"),
   })
   .required()
 
 type FormData = yup.InferType<typeof schema>
-
-const serviceTypes = [
-  "Residential Roofing",
-  "Commercial Roofing",
-  "Slate Roofing",
-  "Cedar Shake Roofing",
-  "Tile Roofing",
-  "Metal Shingles",
-  "Synthetic Roofing",
-  "Roof Inspection",
-  "Insurance Claim",
-  "Other",
-]
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -100,86 +78,26 @@ export default function ContactForm() {
         )}
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-          {/* Name Fields */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-orange-500 mb-1">First Name*</label>
-              <input
-                type="text"
-                {...register("firstName")}
-                className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-              />
-              {errors.firstName && <p className="mt-1 text-sm text-red-400">{errors.firstName.message}</p>}
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-orange-500 mb-1">Last Name*</label>
-              <input
-                type="text"
-                {...register("lastName")}
-                className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-              />
-              {errors.lastName && <p className="mt-1 text-sm text-red-400">{errors.lastName.message}</p>}
-            </div>
+          <div>
+            <label className="block text-sm font-medium text-orange-500 mb-1">Name*</label>
+            <input
+              type="text"
+              {...register("name")}
+              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
+            />
+            {errors.name && <p className="mt-1 text-sm text-red-400">{errors.name.message}</p>}
           </div>
 
-          {/* Contact Fields */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-orange-500 mb-1">Email*</label>
-              <input
-                type="email"
-                {...register("email")}
-                className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-              />
-              {errors.email && <p className="mt-1 text-sm text-red-400">{errors.email.message}</p>}
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-orange-500 mb-1">Phone*</label>
-              <input
-                type="tel"
-                {...register("phone")}
-                className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-              />
-              {errors.phone && <p className="mt-1 text-sm text-red-400">{errors.phone.message}</p>}
-            </div>
+          <div>
+            <label className="block text-sm font-medium text-orange-500 mb-1">Phone*</label>
+            <input
+              type="tel"
+              {...register("phone")}
+              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
+            />
+            {errors.phone && <p className="mt-1 text-sm text-red-400">{errors.phone.message}</p>}
           </div>
 
-          {/* Service & Property Type */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-orange-500 mb-1">Service Type*</label>
-              <select
-                {...register("serviceType")}
-                className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-              >
-                <option value="">Select a service</option>
-                {serviceTypes.map((service) => (
-                  <option key={service} value={service}>
-                    {service}
-                  </option>
-                ))}
-              </select>
-              {errors.serviceType && <p className="mt-1 text-sm text-red-400">{errors.serviceType.message}</p>}
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-orange-500 mb-1">Property Type*</label>
-              <select
-                {...register("propertyType")}
-                className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-              >
-                <option value="">Select property type</option>
-                <option value="residential">Residential</option>
-                <option value="commercial">Commercial</option>
-                <option value="industrial">Industrial</option>
-              </select>
-              {errors.propertyType && <p className="mt-1 text-sm text-red-400">{errors.propertyType.message}</p>}
-            </div>
-          </div>
-
-          {/* Address */}
           <div>
             <label className="block text-sm font-medium text-orange-500 mb-1">Address*</label>
             <input
@@ -190,75 +108,6 @@ export default function ContactForm() {
             {errors.address && <p className="mt-1 text-sm text-red-400">{errors.address.message}</p>}
           </div>
 
-          {/* Service Needed */}
-          <div>
-            <label className="block text-sm font-medium text-orange-500 mb-1">Service Needed*</label>
-            <select
-              {...register("serviceNeeded")}
-              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-            >
-              <option value="">Select service needed</option>
-              <option value="replacement">Replacement</option>
-              <option value="repair">Repair</option>
-            </select>
-            {errors.serviceNeeded && <p className="mt-1 text-sm text-red-400">{errors.serviceNeeded.message}</p>}
-          </div>
-
-          {/* Homeowner Status */}
-          <div>
-            <label className="block text-sm font-medium text-orange-500 mb-1">Are you the homeowner?*</label>
-            <select
-              {...register("isHomeowner")}
-              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-            >
-              <option value="">Select option</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-            {errors.isHomeowner && <p className="mt-1 text-sm text-red-400">{errors.isHomeowner.message}</p>}
-          </div>
-
-          {/* Roof Damage */}
-          <div>
-            <label className="block text-sm font-medium text-orange-500 mb-1">Do you have roof leaks or damage?*</label>
-            <select
-              {...register("hasRoofDamage")}
-              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-            >
-              <option value="">Select option</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-            {errors.hasRoofDamage && <p className="mt-1 text-sm text-red-400">{errors.hasRoofDamage.message}</p>}
-          </div>
-
-          {/* Preferred Contact Method */}
-          <div>
-            <label className="block text-sm font-medium text-orange-500 mb-1">Preferred Contact Method*</label>
-            <select
-              {...register("preferredContact")}
-              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-            >
-              <option value="">Select contact method</option>
-              <option value="phone">Phone</option>
-              <option value="email">Email</option>
-              <option value="text">Text Message</option>
-            </select>
-            {errors.preferredContact && <p className="mt-1 text-sm text-red-400">{errors.preferredContact.message}</p>}
-          </div>
-
-          {/* Message */}
-          <div>
-            <label className="block text-sm font-medium text-orange-500 mb-1">Message*</label>
-            <textarea
-              {...register("message")}
-              rows={4}
-              className="w-full px-4 py-2 bg-gray-800 border border-orange-500/50 rounded-md focus:ring-orange-500 focus:border-orange-500 text-white"
-            />
-            {errors.message && <p className="mt-1 text-sm text-red-400">{errors.message.message}</p>}
-          </div>
-
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}
@@ -284,9 +133,9 @@ export default function ContactForm() {
 
           <div className="flex items-start space-x-4">
             <Mail className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
-            <div className="min-w-0">
+            <div>
               <h3 className="font-semibold mb-1 text-orange-500">Email</h3>
-              <p className="text-white break-words">davis@summitroofingprofessionals.com</p>
+              <p className="text-white break-all">davis@summitroofingprofessionals.com</p>
               <p className="text-sm text-gray-300">We&apos;ll respond within 24 hours</p>
             </div>
           </div>
@@ -315,5 +164,7 @@ export default function ContactForm() {
     </div>
   )
 }
+
+
 
 
