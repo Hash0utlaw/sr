@@ -56,9 +56,9 @@ export default function InspectionsMaintenancePage() {
             </div>
           </div>
           <div className="animate-fade-in-right relative h-96">
-            <Image 
-              src="/roof-inspec/roof-inspec-2.png" 
-              alt="Roof Inspection" 
+            <Image
+              src="/roof-inspec/roof-inspec-2.png"
+              alt="Roof Inspection"
               fill
               className="rounded-lg shadow-lg object-cover"
             />
@@ -101,6 +101,16 @@ export default function InspectionsMaintenancePage() {
       </Section>
 
       <Section>
+        <div className="bg-orange-500 text-black p-8 rounded-lg text-center">
+          <h2 className="text-3xl font-bold mb-4">Exclusive Maintenance Plan Offer</h2>
+          <p className="text-xl">
+            Enjoy substantial savings with our maintenance plan: 20-25% off all major repairs, coatings, or full
+            replacements.
+          </p>
+        </div>
+      </Section>
+
+      <Section>
         <div className="text-center space-y-6">
           <h2 className="text-3xl font-bold">Schedule Your Inspection Today</h2>
           <p className="text-lg text-orange-300 max-w-2xl mx-auto">
@@ -118,3 +128,4 @@ export default function InspectionsMaintenancePage() {
     </div>
   )
 }
+

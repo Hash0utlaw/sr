@@ -13,7 +13,12 @@ export function Footer() {
               Professional roofing services with unmatched quality and customer satisfaction.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-orange-300 hover:text-orange-500 transition-colors hover-lift">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61572937707369&sk=reviews_given" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-300 hover:text-orange-500 transition-colors hover-lift"
+              >
                 <Facebook className="w-6 h-6" />
               </a>
             </div>
@@ -124,5 +129,4 @@ export function Footer() {
     </footer>
   )
 }
-
 
