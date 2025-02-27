@@ -7,20 +7,7 @@ export async function POST(req: Request) {
     const data = await req.json();
 
     // Validate required fields
-    const requiredFields = [
-      'firstName',
-      'lastName',
-      'email',
-      'phone',
-      'serviceType',
-      'message',
-      'preferredContact',
-      'propertyType',
-      'address',
-      'serviceNeeded',
-      'isHomeowner',
-      'hasRoofDamage'
-    ];
+    const requiredFields = ['name', 'phone', 'address'];
 
     for (const field of requiredFields) {
       if (!data[field]) {
@@ -34,52 +21,25 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: 'Summit Roofing <onboarding@resend.dev>',
       to: 'davis@summitroofingprofessionals.com',
-      subject: `New Roofing Inquiry: ${data.serviceType}`,
-      replyTo: data.email,
+      subject: `New Roofing Inquiry`,
+      replyTo: 'no-reply@summitroofingprofessionals.com',
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><strong>Service Type:</strong> ${data.serviceType}</p>
-
+        
         <h3>Customer Information:</h3>
         <ul>
-          <li><strong>Name:</strong> ${data.firstName} ${data.lastName}</li>
-          <li><strong>Email:</strong> ${data.email}</li>
+          <li><strong>Name:</strong> ${data.name}</li>
           <li><strong>Phone:</strong> ${data.phone}</li>
           <li><strong>Address:</strong> ${data.address}</li>
-          <li><strong>Preferred Contact Method:</strong> ${data.preferredContact}</li>
-          <li><strong>Property Type:</strong> ${data.propertyType}</li>
         </ul>
-
-        <h3>Service Details:</h3>
-        <ul>
-          <li><strong>Service Needed:</strong> ${data.serviceNeeded}</li>
-          <li><strong>Is Homeowner:</strong> ${data.isHomeowner}</li>
-          <li><strong>Has Roof Damage:</strong> ${data.hasRoofDamage}</li>
-        </ul>
-
-        <h3>Message:</h3>
-        <p>${data.message}</p>
       `,
       text: `
         New Contact Form Submission
 
-        Service Type: ${data.serviceType}
-
         Customer Information:
-        - Name: ${data.firstName} ${data.lastName}
-        - Email: ${data.email}
+        - Name: ${data.name}
         - Phone: ${data.phone}
         - Address: ${data.address}
-        - Preferred Contact Method: ${data.preferredContact}
-        - Property Type: ${data.propertyType}
-
-        Service Details:
-        - Service Needed: ${data.serviceNeeded}
-        - Is Homeowner: ${data.isHomeowner}
-        - Has Roof Damage: ${data.hasRoofDamage}
-
-        Message:
-        ${data.message}
       `
     });
 
