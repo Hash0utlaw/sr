@@ -8,14 +8,13 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-black text-orange-500">
       <NavBar />
-      {/* Hero Section */}
-      <section className="bg-gray-900 py-24">
+
+      {/* Contact Form Section - Now first */}
+      <section className="py-24 bg-gray-900">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-orange-500">Contact Summit Roofing</h1>
-            <p className="text-xl text-orange-300">
-              Get in touch with our roofing experts for a free consultation and estimate.
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold mb-12 text-orange-500 text-center">Contact Summit Roofing</h1>
+            <ContactForm />
           </div>
         </div>
       </section>
@@ -23,7 +22,7 @@ export default function ContactPage() {
       {/* Quick Contact Cards */}
       <section className="py-16 bg-black">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto -mt-32">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Emergency Service */}
             <Card className="bg-gray-900 border-orange-500">
               <CardHeader>
@@ -32,7 +31,12 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-orange-300 mb-4">Available around the clock for urgent roofing needs</p>
-               
+                <a
+                  href="tel:704-578-4756"
+                  className="text-orange-500 font-semibold text-xl hover:text-orange-400 transition-colors"
+                >
+                  704-578-4756
+                </a>
               </CardContent>
             </Card>
 
@@ -55,11 +59,11 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-orange-300">
-                  Mon-Fri: 6AM-6PM
+                  Mon-Fri: 8AM-5PM
                   <br />
-                  Sat: 6AM-6PM
+                  Sat: 9AM-2PM
                   <br />
-                  Sun: 6AM-6PM
+                  Sun: Closed
                 </p>
               </CardContent>
             </Card>
@@ -67,17 +71,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section className="py-16 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <ContactForm />
-          </div>
-        </div>
-      </section>
-
       {/* Service Areas */}
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-orange-500 mb-12 text-center">Our Service Areas</h2>
@@ -93,7 +88,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="grid grid-cols-2 gap-4">
-                    {["Auburn", "Opelika", "Smiths Station", "Phenix City", "Alexander City", "Valley AL", "Lanett AL"].map((city) => (
+                    {["Birmingham", "Montgomery", "Huntsville", "Mobile", "Auburn", "Tuscaloosa"].map((city) => (
                       <li key={city} className="flex items-center text-orange-300">
                         <div className="w-2 h-2 bg-orange-500 transform rotate-45 mr-2" />
                         {city}
@@ -113,7 +108,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="grid grid-cols-2 gap-4">
-                    {["Columbus", "Lagrange", "Pine Mountain", "Newnan", "Peachtree City", "Tyrone", "Sharpsburg"].map((city) => (
+                    {["Atlanta", "Augusta", "Columbus", "Macon", "Savannah", "Athens"].map((city) => (
                       <li key={city} className="flex items-center text-orange-300">
                         <div className="w-2 h-2 bg-orange-500 transform rotate-45 mr-2" />
                         {city}
@@ -128,7 +123,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-900">
+      <section className="py-16 bg-black">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold text-orange-500 mb-12 text-center">Frequently Asked Questions</h2>
@@ -138,7 +133,7 @@ export default function ContactPage() {
                 {
                   question: "How quickly can you respond to emergency situations?",
                   answer:
-                    "We offer rapid emergency response services",
+                    "We offer 24/7 emergency response services and typically arrive within 2-4 hours for urgent situations.",
                 },
                 {
                   question: "Do you provide free estimates?",
@@ -146,12 +141,12 @@ export default function ContactPage() {
                     "Yes, we provide free, detailed estimates for all roofing projects. Our expert team will assess your needs and provide a comprehensive quote.",
                 },
                 {
-                  question: "What warranties do you offer?",
+                  question: "What information do I need to provide when contacting you?",
                   answer:
-                    "We offer lifetime warranties on workmanship and materials for most roofing systems, with transferable options available.",
+                    "We ask for your name, phone number, and address. This allows us to quickly respond and provide accurate service based on your location.",
                 },
               ].map((faq, index) => (
-                <Card key={index} className="bg-black border-orange-500">
+                <Card key={index} className="bg-gray-900 border-orange-500">
                   <CardHeader>
                     <CardTitle className="text-xl font-bold text-orange-500">{faq.question}</CardTitle>
                   </CardHeader>
@@ -182,4 +177,6 @@ export default function ContactPage() {
     </div>
   )
 }
+
+
 
