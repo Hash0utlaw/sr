@@ -83,6 +83,8 @@ export default function AboutPage() {
                 <li>Opelika</li>
                 <li>Valley</li>
                 <li>Smith Station</li>
+                <li>Lannet</li>
+                <li>And surrounding areas</li>
               </ul>
             </div>
             <div>
@@ -95,6 +97,13 @@ export default function AboutPage() {
                 <li>Union City</li>
                 <li>LaGrange</li>
                 <li>Tyrone</li>
+                <li>Atlanta</li>
+                <li>Canton</li>
+                <li>WoodStock</li>
+                <li>Sandy Springs</li>
+                <li>Kennesaw</li>
+                <li>Johns Creek</li>
+                <li>Duluth</li>
               </ul>
             </div>
           </div>

@@ -88,7 +88,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="grid grid-cols-2 gap-4">
-                    {["Birmingham", "Montgomery", "Huntsville", "Mobile", "Auburn", "Tuscaloosa"].map((city) => (
+                    {["Birmingham", "Montgomery", "Huntsville", "Mobile", "Auburn", "Tuscaloosa", "Opelika", "Phoenix City", "Smiths Station","Valley","And surronding areas"].map((city) => (
                       <li key={city} className="flex items-center text-orange-300">
                         <div className="w-2 h-2 bg-orange-500 transform rotate-45 mr-2" />
                         {city}
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="grid grid-cols-2 gap-4">
-                    {["Atlanta", "Augusta", "Columbus", "Macon", "Savannah", "Athens"].map((city) => (
+                    {["Newnan", "Sharpsburg", "Columbus", "PeachTree City", "Union City", "LaGrange", "Tyrone", "Atlanta", "Canton", "Woodstock","Sandy Springs", "Keenesaw", "Johns Creek", "Duluth"].map((city) => (
                       <li key={city} className="flex items-center text-orange-300">
                         <div className="w-2 h-2 bg-orange-500 transform rotate-45 mr-2" />
                         {city}
